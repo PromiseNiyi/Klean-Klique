@@ -24,7 +24,7 @@
             <li><a href="Contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <a class="call-us-now" href="#"> <button>Call Us Now <i class="fa-solid fa-phone-flip"></i></button> </a>
+    <a class="call-us-now" href="tel:1234"> <button>Call Us Now <i class="fa-solid fa-phone-flip"></i></button> </a>
  </header>
 
 <!--____________________________________________________________________________-->
@@ -54,7 +54,7 @@
         
     </div>
     <div class="bookbutton"> 
-        <a class="Explore" href="#">  <button class="book-appointment">Book an Appointment </button></a>
+        <a class="Explore" href="Contact.html">  <button class="book-appointment">Book an Appointment </button></a>
     </div>
 
     
@@ -94,7 +94,7 @@
                </div>
         </div>
         
-        <a class="Learn-more" href="#">  <button>Learn More </button></a>
+        <a class="Learn-more" href="About.html">  <button>Learn More </button></a>
        
 </Section>
 
@@ -132,12 +132,12 @@
                  
                 <div class="form">
                   <form class="contact-form" >
-                    <input required="" type="text" placeholder="Name"/>
-                    <input required="" type="email" placeholder="Email Address"/>
-                    <input required="" type="tel" placeholder="Phone"/>
+                    <input required="" type="text" placeholder="Name"  id="Name" name="Name"/>
+                    <input required="" type="email" placeholder="Email Address" id="Email" name="Email"/>
+                    <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
                     
                     
-                    <select  name="primary-colors">
+                    <select  name="primary-colors"  name="primary-select" id="primary-select">
                         
                         <option value="No Service selected">Select a Service</option>
                         <option value="Home Cleaning">Home Cleaning</option>
@@ -146,7 +146,7 @@
                         <option value="Laundry Service">Laundry Service</option>
                         
                        </select>
-                    <a class="contact-button" href="#"> <button>Contact</button></a>
+                    <button type="submit">Contact</button>
                     
                   </form>
 
