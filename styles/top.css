@@ -1,0 +1,17 @@
+.header{
+position: fixed;
+background-color:  rgb(15, 119, 255, 1);
+bottom: 16px;
+right: 32px;
+color: white;
+width: 150px;
+height: 50px;
+transition: all .4s;
+border-radius: 50px;
+display: none;
+align-items: center;
+justify-content: center;
+padding: 5px;
+transition: all .4s;
+}
+
