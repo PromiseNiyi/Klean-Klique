@@ -37,6 +37,14 @@ header{
     background: none;
   
 } 
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    z-index: 9999;
+   
+}
 
 	
 .sticky{
