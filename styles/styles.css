@@ -6,6 +6,7 @@
     padding: 0;
     font-family:"montserrat", poppins, sans-serif;
     overflow-x: hidden;
+    height: auto;
     
 }
 html{
@@ -146,7 +147,7 @@ section{
     font-size: 80px;
     font-weight: bold;
     display: block;
-    height: 100%;
+    height: 110%;
     padding-left: 10px;
     color: #0e6ffc;
     animation: spin_words 8s infinite;
@@ -433,7 +434,15 @@ overflow: hidden;
 transition: all 0.5s ease;
 
 }
+.Abou-flex{
+    margin-bottom: 0;
+    overflow: hidden;
 
+}
+.About-explore{
+    margin-top: 0;
+   
+}
 
 
 .About-page h1{
@@ -463,101 +472,7 @@ transition: all 0.5s ease;
 /* Service Page*/
 /*__________________________
 
-.writeup-2{
-    padding: 20px 40% 0 0;
-    text-align: left;
-    font-size: 14px;
-    line-height: 25px;
-    color :  rgb(45, 45, 45);
-}
-
-.Service-page{
-    background-color: #f6f6f6;
-    font-size: 20px;
-    color :  rgb(45, 45, 45);  
-   text-align: center;
-    padding-top:10%;
-   height: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding-bottom: 50px;
-   
-    
-    }
-
-    .Service-page h1{
-margin-bottom: 10%;
-
-    }
-
-    .service-flexx{
-        margin: 10px 0;
-       
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 100px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    .service-writeup{
-       
-        text-align: left;
-        padding-right: 15%;
-        transition: all 0.3s ease 0s;
-    }
-
-    .service-writeup:hover{
-        transform: translateX(1%);
-    }
-
-
-    .service-writeup h2{
-        font-size: 25px;
-    }
-    .service-writeup p{
-        font-size: 12pt;
-        padding: 10px 12% 10px 0; 
-        line-height: 30px;
-    }
-
-    .service-writeup button{
-margin-top: 10px;
-margin-bottom: 0;
-    }
-
-   .service-img{
-    width: 50%;
-    height: 20vh;
-    overflow: hidden;
-    border-radius: 10px;
-    
-   }
-   .service-img img{
-    overflow: hidden;
-    size: 100%;
-    margin: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 1s ease 0s;
-
-    }
-
-
-
-    
-    .service-img img:hover{
-      
-        
-        transform:scale(1.1);
-        overflow:hidden
-       
-    }
-
-_____________________________________*/
+____________________________*/
 
 
 
@@ -567,7 +482,7 @@ _____________________________________*/
     color :  rgb(45, 45, 45);  
    text-align: center;
     padding-top:2%;
-   height: 110vh;
+   height: auto;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -598,13 +513,14 @@ _____________________________________*/
     width: 100%;
      
       display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
      justify-content: center;
      align-items: center;
      text-align: center;
      align-content: center;
      overflow: hidden;
      justify-items: center;
+   
        }
       .flexx{
         display: flex;
@@ -685,55 +601,18 @@ _____________________________________*/
       transform: translateX(5px);
    }
   
-  
-  
-   @media (max-width: 100em) {
-  
-  
-    .list--item {
-      
-     width: 90%;
-     height:70vh;
-     
-     
-    }
-    #pictur {
-        height: 60% ;
-       
-         
-           
-       }
-       .list-content {
-        height: 40%;
-       }
-   }
 
-
-   @media (max-width: 100em) {
-    .newservice{
-     height: auto;
-     padding-top: 25%;
-        
-    }
-   }
-
-/*_______________________________________________________________*/
+  /*___________________________________________________________*/
 /* contactus page*/
 
-    .contact-page{
-        color :  rgb(45, 45, 45); 
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: #f6f6f6;
+  
 
+    .contact-page-main h1{
+        margin-bottom: 50px;
+        font-size: 50px;
+           
     }
-
-    .contact-page h1{
-        margin-bottom: 5%;
-    }
+    
   
 
     .instruction-link2 p{
@@ -748,7 +627,7 @@ _____________________________________*/
         height: 100vh;
        display: flex;
        flex-direction: column;
-       justify-content: space-around;
+       justify-content: center;
        align-items: center;
      background-color: #f6f6f6;
     
@@ -859,6 +738,74 @@ _____________________________________*/
         .section-four{
             height: 100vh;
         }
+
+
+
+
+        .section-one h1{
+            font-size: 80px;
+        }
+        .wrapper{
+            box-sizing: content-box;
+            background-color:none;
+            height: 100px;
+            overflow: hidden;
+            
+            display: flex;
+            border-radius: 8px;
+            box-shadow: none;
+        }
+        
+        .words{
+            overflow: hidden;
+        }
+        
+        .rotate{
+            font-size: 80px;
+            font-weight: bold;
+            display: block;
+            height: 110%;
+            padding-left: 10px;
+            color: #0e6ffc;
+            animation: spin_words 8s infinite;
+        }
+    
+        
+        .list--item {
+          
+         width: 90%;
+         height:70vh;
+         
+         
+        }
+        #pictur {
+            height: 60% ;
+           
+             
+               
+           }
+           .list-content {
+            height: 40%;
+           }
+    
+           .newservice{
+            height: auto;
+            padding-top: 10%;
+             
+            background-color: #f6f6f6;
+                
+                color :  rgb(45, 45, 45);  
+               text-align: center;     
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               padding-bottom: 50px;
+                
+          
+           }
+
+  
 
     }
 
@@ -981,7 +928,7 @@ _____________________________________*/
             
            }
            .section-three{
-            height: 70vh;
+            height: 60vh;
             padding-top: 0;
            }
            .contact-section{
@@ -1001,7 +948,7 @@ _____________________________________*/
         }
         
         footer{
-            height: 30vh;
+            height: 25vh;
             width: 100%;
             background-color: #ffffff;
             display: flex;
@@ -1009,6 +956,7 @@ _____________________________________*/
             justify-content: space-between;
             padding: 0 5% ;
             text-align: center;  
+            overflow: hidden;
             }
     }
 
@@ -1022,7 +970,11 @@ _____________________________________*/
             font-size: 40px;
         }
 
-
+.section-three{
+    height: 50vh;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
 
         .service-img{
             margin: 10%;
@@ -1037,17 +989,6 @@ _____________________________________*/
             display: block;
             margin-right: 30%;
         }
-        footer{
-            height: 30vh;
-            width: 100%;
-            background-color: #ffffff;
-            display: flex;
-           flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 50px ;
-                
-            }
 
             .contact-section{
                 display: flex;
@@ -1085,5 +1026,20 @@ _____________________________________*/
      background-color: #f6f6f6;
     
         }
+
+        footer{
+            height: 30vh;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10% 5% ;
+            text-align: center;  
+            overflow: hidden;
+            }
+
+            
 
     }
