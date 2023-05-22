@@ -878,9 +878,75 @@ ____________________________*/
 
 
     }
+    @media (max-width:70em){
+        header{
+
+            margin-right: 0;
+            padding-right: 0;
+            justify-content: space-evenly;
+            inset: 0 0 90% 30%;
+            background-color: none;
+        }
+        .header-flex{
+            position: fixed;
+            inset: 0 30% 0 0;
+            background-color: red;
+            display: block;
+            text-align: center;
+            padding-top: 20%;
+            display: none;
+        }
+        
+        .nav_links li{
+            display: block;
+            padding: 0 20px;
+            margin: 25px 0;
+        }
+        
+        .call-us-now button{
+            display: inline-block;
+         
+        
+        }
+        .sticky{
+            background: none;
+            backdrop-filter: none;
+        }
+
+    }
 
 
     @media (max-width:60em){
+header{
+
+    margin-right: 0;
+    padding-right: 0;
+    justify-content: space-evenly;
+    inset: 0 0 90% 30%;
+}
+.header-flex{
+    position: fixed;
+    inset: 0 30% 0 0;
+    background-color: red;
+    display: block;
+    text-align: center;
+    padding-top: 20%;
+    display: none;
+}
+
+.nav_links li{
+    display: block;
+    padding: 0 20px;
+    margin: 25px 0;
+}
+
+.call-us-now button{
+    display: inline-block;
+ 
+
+}
+
+
 
 
         li, a{
@@ -928,6 +994,11 @@ ____________________________*/
             height: 60vh;
             padding-top: 0;
            }
+
+           .section-four{
+           padding-top: 35px;
+           height: 120vh;
+           }
            .contact-section{
             display: flex;
             flex-direction: column;
@@ -955,10 +1026,33 @@ ____________________________*/
             text-align: center;  
             overflow: hidden;
             }
+
+
+
+            .contact-page-main h1{
+                font-size: 30px;
+                
+            }
+
+            .contact-page-main{
+                height: auto;
+               }
+
+
+            .form2{
+                height: auto;
+            }
+
     }
 
     @media (max-width:50em){
+        header{
 
+            margin-right: 0;
+            padding-right: 0;
+            justify-content: space-evenly;
+            inset: 0 0 90% 25%;
+        }
 
         .section-one h1{
             font-size: 40px;
