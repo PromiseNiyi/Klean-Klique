@@ -557,7 +557,10 @@ ____________________________*/
       height: 30%;
       overflow: hidden;
    }
-
+.list-content p{
+    text-align: justify;
+    font-size: 12px;
+}
    
   #pictur{
   
@@ -603,7 +606,7 @@ ____________________________*/
   
 
   /*___________________________________________________________*/
-/* contactus page*/
+/* Contact us page*/
 
   
 
@@ -1036,7 +1039,7 @@ ____________________________*/
         }
 
         footer{
-            height: 30vh;
+            height: 35vh;
             width: 100%;
             background-color: #ffffff;
             display: flex;
