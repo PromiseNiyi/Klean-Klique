@@ -51,6 +51,7 @@ header{
 .logo{
     cursor: pointer;
     background: none;
+   
 }
 .nav_links{
     list-style: none;
@@ -757,6 +758,7 @@ _____________________________________*/
         margin-bottom: 10%;
 
         }
+        
 
 
 
@@ -936,7 +938,19 @@ _____________________________________*/
 
     @media (max-width:60em){
 
-       
+
+        li, a{
+            font-family:"montserrat", poppins, sans-serif;
+            font-weight: 500;
+            font-size: 15x;
+           
+            }
+
+
+        
+        .section-two{
+            height:auto
+        }
 
 
         .service-img{
@@ -966,7 +980,10 @@ _____________________________________*/
             border-radius: 10px;
             
            }
-
+           .section-three{
+            height: 70vh;
+            padding-top: 0;
+           }
            .contact-section{
             display: flex;
             flex-direction: column;
@@ -984,14 +1001,14 @@ _____________________________________*/
         }
         
         footer{
-            height: 15vh;
+            height: 30vh;
             width: 100%;
             background-color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 5% ;
-                
+            text-align: center;  
             }
     }
 
