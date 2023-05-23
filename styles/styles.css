@@ -139,11 +139,7 @@ section{
 
 
 .section-one1{
-<<<<<<< HEAD
     background-image: url('/images/home.jpg');
-=======
-    background-image: url('./images/home.jpg');
->>>>>>> a40fcbb0280f2b14e4e0f03735a7b6066df15de9
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
