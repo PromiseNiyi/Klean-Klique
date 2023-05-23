@@ -34,7 +34,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 100px;
     position: fixed;
 	width: 100%;
 	transition: all 0.2s ease 0s;
@@ -50,12 +50,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 65%;
     z-index: 9999;
    
 }
 .navigate{
-    width: 100%;
+    width:60%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,8 +98,18 @@ nav{
 .nav_links li a:hover{
     color: rgba(15, 171, 255, 0.8);
 }
+.call-us-now button{
+   
+    padding: 10px 25px;
+    background-color: rgb(15, 119, 255, 1);
+    border: none;
+   border-radius: 50px;
+   cursor:pointer;
+   transition: all 0.3s ease 0s;
+   color: white;
+}
 button{
-    padding: 9px 25px;
+    padding: 9px 35px;
      background-color: rgb(15, 119, 255, 1);
      border: none;
     border-radius: 50px;
@@ -141,6 +151,8 @@ section{
 
 .section-one{
     
+ 
+
     width: 100%;
     color: rgb(15, 119, 255, 1);
 	text-align: left;
@@ -725,6 +737,12 @@ ____________________________*/
     /*_____________responsive_______________________________*/
     @media (max-width:100em){
 
+        .navigate{
+            width:65%; 
+           
+        }
+
+
         .illustrate{
             padding: 10px 50px;
             background-color:  rgb(255, 255, 255);
@@ -829,6 +847,12 @@ ____________________________*/
 
 
     @media (max-width:90em){
+
+        .navigate{
+            width:70%; 
+           
+        }
+
         .section-one h1{
             font-size: 60px;
         }
@@ -836,7 +860,9 @@ ____________________________*/
             font-size: 60px;
         }
 
-
+        .contact-page-main{
+            height: 100vh;
+           }
 
         .illustrate{
             padding: 10px 50px 30px 50px;
@@ -904,9 +930,8 @@ ____________________________*/
         header{
 
             margin-right: 0;
-            padding-right: 0;
-            justify-content: space-evenly;
-            inset: 0 0 90% 30%;
+            padding-right: 100px;         
+            justify-content: right;
             background-color: none;
         }
         .header-flex{
@@ -916,7 +941,7 @@ ____________________________*/
             display: block;
             text-align: center;
             padding: min(30vh, 10rem) 2em;
-           
+            
            
         }
         .navigate{
@@ -946,7 +971,7 @@ ____________________________*/
         .nav-toggle{
             display: block;
             position: absolute;
-            background-image: url(/icons/xdemo.png);
+            background-image: url(/icons/menu.png);
             background-color: transparent;
             border: none;
             aspect-ratio: 1;
@@ -991,17 +1016,16 @@ ____________________________*/
             backdrop-filter: none;
         }
 
+        
+
     }
 
 
     @media (max-width:60em){
-header{
-    
-    margin-right: 0;
-    padding-right: 0;
-    justify-content: space-evenly;
-    inset: 0 0 90% 30%;
-}
+        header{
+            padding-right: 20px;
+        }
+
 .header-flex{
    
     position: fixed;
@@ -1104,7 +1128,7 @@ header{
         }
         
         footer{
-            height: 25vh;
+            height: 15vh;
             width: 100%;
             background-color: #ffffff;
             display: flex;
@@ -1122,9 +1146,7 @@ header{
                 
             }
 
-            .contact-page-main{
-                height: auto;
-               }
+            
 
 
             .form2{
@@ -1134,13 +1156,7 @@ header{
     }
 
     @media (max-width:50em){
-        header{
-
-            margin-right: 0;
-            padding-right: 0;
-            justify-content: space-evenly;
-            inset: 0 0 90% 25%;
-        }
+     
 
         .nav-toggle{
             left:3rem;
