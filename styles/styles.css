@@ -9,6 +9,8 @@
     height: auto;
     
 }
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -22,7 +24,7 @@ font-weight: 500;
 font-size: 15x;
 color:rgb(15, 119, 255, 1);
 text-decoration: none;
-background: none;
+
 }
 
 header{
@@ -37,6 +39,10 @@ header{
     background: none;
   
 } 
+
+.nav-toggle{
+    display: none;
+}
 .header-flex{
     display: flex;
     justify-content: space-between;
@@ -48,7 +54,7 @@ header{
 
 	
 .sticky{
-	background: rgba(167, 204, 247, 0.8);
+	background-color: rgba(167, 204, 247, 0.8);
 	height: 10vh;
 	width: 100%;
     backdrop-filter: blur(5px);
@@ -85,8 +91,8 @@ nav{
 }
 button{
     padding: 9px 25px;
-    background-color: rgb(15, 119, 255, 1);
-    border: none;
+     background-color: rgb(15, 119, 255, 1);
+     border: none;
     border-radius: 50px;
     cursor:pointer;
     transition: all 0.3s ease 0s;
@@ -110,6 +116,8 @@ section{
 
 
 /*section one*/
+
+
 
 .section-one1{
     display: flex;
@@ -217,6 +225,8 @@ overflow: hidden;
 
 
 /*section two*/
+
+
 
 .section-two{
 height: 100vh;
@@ -888,19 +898,63 @@ ____________________________*/
             background-color: none;
         }
         .header-flex{
+            
             position: fixed;
-            inset: 0 30% 0 0;
-            background-color: red;
+            inset: 0 60% 0 0;
             display: block;
             text-align: center;
-            padding-top: 20%;
-            display: none;
+            padding: min(30vh, 10rem) 2em;
+           
+           
         }
+        .navigate{
+            width: 40%;
+            position: fixed;
+            inset: 0 60% 0 0;
+            background-color: rgba(14, 14, 33, 0.5);
+            display: block;
+            text-align: center;
+            padding: min(30vh, 10rem) 2em;
+            transform: translateX(0%);
+           
+        }
+        @supports (backdrop-filter:blur(1rem)){
+            .navigate{
+                background-color:rgba(11, 35, 66, 0.663);
+                backdrop-filter: blur(1rem);
+
+            }
+        }
+
+        .nav-toggle{
+            display: block;
+            position: absolute;
+            background-image: url(/menu.png);
+            background-color: transparent;
+            border: none;
+            aspect-ratio: 1;
+            border-radius: 5px;
+            width:2rem;
+            top: 2rem;
+            left: 2rem;
+            z-index: 9999;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .nav-toggle:hover{
+            background-color: transparent;
+        }
+
+        
         
         .nav_links li{
             display: block;
             padding: 0 20px;
             margin: 25px 0;
+          
+        }
+        .nav_links li a{
+            color: white;
         }
         
         .call-us-now button{
@@ -918,21 +972,28 @@ ____________________________*/
 
     @media (max-width:60em){
 header{
-
+    
     margin-right: 0;
     padding-right: 0;
     justify-content: space-evenly;
     inset: 0 0 90% 30%;
 }
 .header-flex{
+   
     position: fixed;
     inset: 0 30% 0 0;
-    background-color: red;
     display: block;
     text-align: center;
     padding-top: 20%;
-    display: none;
+    
+    
 }
+
+.navigate{
+    width: 60%;
+}
+
+
 
 .nav_links li{
     display: block;
@@ -949,14 +1010,16 @@ header{
 
 
 
-        li, a{
-            font-family:"montserrat", poppins, sans-serif;
-            font-weight: 500;
-            font-size: 15x;
-           
-            }
+ li, a{
+    font-family:"montserrat", poppins, sans-serif;
+    font-weight: 500;
+    font-size: 15x;
+    
+    }
 
-
+.section-one{
+    padding: 0 25px;
+}
         
         .section-two{
             height:auto
