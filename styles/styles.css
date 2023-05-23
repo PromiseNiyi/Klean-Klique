@@ -943,7 +943,7 @@ ____________________________*/
         .nav-toggle{
             display: block;
             position: absolute;
-            background-image: url(/icons/menu.png);
+            background-image: url(icons/menu.png);
             background-color: transparent;
             border: none;
             aspect-ratio: 1;
