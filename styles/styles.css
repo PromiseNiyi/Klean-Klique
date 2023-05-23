@@ -972,7 +972,7 @@ ____________________________*/
             display: block;
             position: absolute;
             background-image: url(/icons/menu.png);
-            background-color: transparent;
+            background-color: blue;
             border: none;
             aspect-ratio: 1;
             border-radius: 5px;
