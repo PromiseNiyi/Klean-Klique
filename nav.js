@@ -3,6 +3,10 @@ const primNav = document.querySelector(".nav-togglecancel");
 
 const navToggle = document.querySelector(".nav-toggle");
 const navToggletwo = document.querySelector(".nav-togglecancel");
+const bodyCancel =document.querySelector("Section")
+
+
+
 
 navToggle.addEventListener('click', () =>{
  const visibility = primaryNav.getAttribute('data-visible')
@@ -39,3 +43,23 @@ navToggletwo.addEventListener('click', () =>{
  
  
  });  
+
+
+ bodyCancel.addEventListener('click', () =>{
+  const visibility = primaryNav.getAttribute('data-visible')
+  
+ 
+  if (visibility === "true"){
+   primaryNav.setAttribute("data-visible", false);
+   primNav.setAttribute("data-visible", false);
+   
+ 
+  }else if(visibility=== "true"){
+   primaryNav.setAttribute("data-visible", false);
+   primNav.setAttribute("data-visible", false);
+   
+  }
+ 
+ 
+ });  
+
