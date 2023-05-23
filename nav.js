@@ -1,4 +1,4 @@
-const primaryNav = document.querySelector(".header-flex");
+const primaryNav = document.querySelector(".navigate");
 const navToggle = document.querySelector(".nav-toggle");
 
 navToggle.addEventListener('click', () =>{

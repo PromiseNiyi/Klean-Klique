@@ -9,6 +9,9 @@
     height: auto;
     
 }
+body{
+    overflow-x:hidden ;
+}
 
 
 html{
@@ -50,6 +53,12 @@ header{
     width: 60%;
     z-index: 9999;
    
+}
+.navigate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 	
@@ -915,9 +924,14 @@ ____________________________*/
             display: block;
             text-align: center;
             padding: min(30vh, 10rem) 2em;
-            transform: translateX(0%);
+            transition: all 0.5s ease;
+            transform: translateX(-100%);
            
         }
+        .navigate[data-visible="true"]{
+            transform: translateX(-0%);
+        }
+
         @supports (backdrop-filter:blur(1rem)){
             .navigate{
                 background-color:rgba(11, 35, 66, 0.663);
@@ -929,17 +943,24 @@ ____________________________*/
         .nav-toggle{
             display: block;
             position: absolute;
-            background-image: url(/menu.png);
+            background-image: url(/icons/menu.png);
             background-color: transparent;
             border: none;
             aspect-ratio: 1;
             border-radius: 5px;
+            padding: 0;
             width:2rem;
             top: 2rem;
-            left: 2rem;
+            left: 5rem;
             z-index: 9999;
             background-repeat: no-repeat;
             background-size: contain;
+            
+        }
+
+        .nav-toggle[aria-expanded="true"]{
+            background-image: url(/icons/close.png);
+            left: 2rem;
         }
         .nav-toggle:hover{
             background-color: transparent;
@@ -988,6 +1009,7 @@ header{
     
     
 }
+
 
 .navigate{
     width: 60%;
@@ -1115,6 +1137,10 @@ header{
             padding-right: 0;
             justify-content: space-evenly;
             inset: 0 0 90% 25%;
+        }
+
+        .nav-toggle{
+            left:3rem;
         }
 
         .section-one h1{
