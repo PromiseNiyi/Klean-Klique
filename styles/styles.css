@@ -990,9 +990,10 @@ ____________________________*/
             width: 50px;
         }
 
-        .nav-toggle[aria-expanded="true"]{
-            /* background-image: url(/icons/close.png); */ 
-        }
+        /* .nav-toggle[aria-expanded="true"]{
+           background-image: url(/icons/close.png); 
+        } */
+
         .nav-toggle:hover{
             background-color: transparent;
             transform: translateX(5px);
@@ -1052,8 +1053,6 @@ ____________________________*/
             background: none;
             backdrop-filter: none;
         }
-
-        
 
     }
 
