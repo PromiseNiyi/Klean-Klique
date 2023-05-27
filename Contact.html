@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klean Klique</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/formstyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/innerformstyle.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <script type="text/javascript" src="nav.js" defer></script>
 
@@ -43,55 +44,221 @@
  </header>
 
 <section class="contact-page-main">
-  
-    <h1>Book An Appointment</h1>
-    <div>
-        <div class="form2">
-            <form class="contact-form2" >
-                <div class="formflex">
-                    <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
-                    <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
-                    <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
-                    
-                    
-                    <select class="primary-select" name="primary-select" id="primary-select">
-                        
-                        <option value="No Service selected">Select a Service</option>
-                        <option value="Home Cleaning">Home Cleaning</option>
-                        <option value="Office Cleaning">Office Cleaning</option>
-                        <option value="Event Cleaning">Event Cleaning</option>
-                        <option value="Laundry Service">Laundry Service</option>
-                        
-                       </select>
-                </div>
-              
+      <h1>Book An Appointment</h1>
+</section>
+  <!--___________________form section____________________________________________________________-->
 
-                 <div class="formflex">
+<section class="formsection">
+
+    <div class = "center-form">
+       <div class="form2">
+            <form class="contact-form2" >
+               
+                <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
+                <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
+                <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
+                 <label for="primary-select"></label>         
+                <select class="primary-select" name="primary-select" id="primary-select">
+                    
+                    <option value="No Service selected">Select a Service</option>
+                    <option value="HomeCleaning">Home Cleaning</option>
+                    <option value="OfficeCleaning">Office Cleaning</option>
+                    <option value="EventCleaning">Event Cleaning</option>
+                    <option value="LaundryService">Laundry Service</option>
+                    
+                </select>
+    
+    <!-- Section for Home cleaning -->
+    
+                <div id="item-form" class="hidden">
+                  <h1>Select Wears accordingly</h1>
+                  <div class="hidden-child">
+    
+                   
+      
+                    <div class="product">
+                      <h2>Rooms</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="10">
+                      </div>
+                    </div>
+      
+                    <div class="product">
+                      <h2>Toilets</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="20">
+                      </div>
+                    </div>
+      
+                    <div class="product">
+                      <h2>Living Room</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="30">
+                      </div>
+                    </div>
+      
+                    <div class="product">
+                      <h2>Kitchen</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="5">
+                      </div>
+                    </div>
+      
+                    <div class="selected-products">
+                      <div class="hline">
+                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                      </div>
+                      
+                      <h2>Cost Of Selected Services</h2>
+                      <ul id="selected-list"></ul>
+                      <div id="total-price">Total Price: $0</div>
+                    </div>
+                    
+                  </div>
+                  <div class="space"></div>
+                </div>
+    
+    <!-- Section for office cleaning -->
+    
+                <div id="item-form2" class="hidden">
+                  <h1>Select Ofice Information</h1>
+                  <div class="hidden-child">
+    
+                   
+      
+                    <div class="product2">
+                      <h2>Tables</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="100" >
+                      </div>
+                    </div>
+      
+                    <div class="product2">
+                      <h2>Chairs</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="200">
+                      </div>
+                    </div>
+      
+                    <div class="product2">
+                      <h2>Offices</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="300">
+                      </div>
+                    </div>
+      
+                    <div class="product2">
+                      <h2>Desks</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="50">
+                      </div>
+                    </div>
+      
+                    <div class="selected-products">
+                      <div class="hline">
+                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                      </div>
+                      
+                      <h2>Cost Of Selected Services</h2>
+                      <ul id="selected-list2"></ul>
+                      <div id="total-price2">Total Price: $0</div>
+                    </div>
+                    
+                  </div>
+                  <div class="space"></div>
+                </div>
+    
+    
+    
+    
+       <!-- Section for laundry -->
+    
+                <div id="item-form3" class="hidden">
+                  <h1>Select Ofice Information</h1>
+                  <div class="hidden-child">
+    
+                   
+      
+                    <div class="product3">
+                      <h2>Suits</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="150" >
+                      </div>
+                    </div>
+      
+                    <div class="product3">
+                      <h2>Shirts</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                      </div>
+                    </div>
+      
+                    <div class="product3">
+                      <h2>Trousers</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                      </div>
+                    </div>
+      
+                    <div class="product3">
+                      <h2>Inner Wears</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                      </div>
+                    </div>
+      
+                    <div class="selected-products">
+                      <div class="hline">
+                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                      </div>
+                      
+                      <h2>Cost Of Selected Services</h2>
+                      <ul id="selected-list3"></ul>
+                      <div id="total-price3">Total Price: $0</div>
+                    </div>
+                    
+                  </div>
+                  <div class="space"></div>
+                </div>
+                
+                
+    
                 <input required="" type="text" placeholder="Location" id="Location" name="Location"/>
                 <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Busstop"/>
                 <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Day"/>
-                <h5>Preferred cleaning Day</h5>
+                <h5>Preferred Cleaning Day</h5>
                 
                 
                 <button type="submit">Contact</button>
-                 </div>
-
+               
+    
                            
             </form>
-
+    
             <div class="instruction-link2">
-                <p>If prefer to reach Us via WhatsApp, <a href="#">Click Here</a>
-
+                <p>If you prefer to reach Us via WhatsApp, <a href="#">Click Here</a>
+    
                 </p>
             </div> 
             
     </div>
 
+       
+    </section>
 
-</section>
-
-
-
+<!-- Form section finished -->
 
 
 <!--_______________________________________________________________________________-->
@@ -115,6 +282,222 @@
       header.classList.toggle("sticky", window.scrollY > 0);
 
   })
-</script>   
+</script>  
+
+
+
+<!-- Show hidden form content on selection -->
+<script>
+    const itemSelect = document.getElementById('primary-select');
+const itemForm = document.getElementById('item-form');
+
+itemSelect.addEventListener('change', (e) => {
+  if (itemSelect.value ==='HomeCleaning') {
+    itemForm.classList.remove('hidden');
+  } else {
+    itemForm.classList.add('hidden');
+  }
+});
+
+
+
+
+const itemSelect2 = document.getElementById('primary-select');
+const itemForm2 = document.getElementById('item-form2');
+
+itemSelect.addEventListener('change', (e) => {
+  if (itemSelect2.value ==='OfficeCleaning') {
+    itemForm2.classList.remove('hidden');
+  } else {
+    itemForm2.classList.add('hidden');
+  }
+});
+
+
+
+
+const itemSelect3 = document.getElementById('primary-select');
+const itemForm3 = document.getElementById('item-form3');
+
+itemSelect.addEventListener('change', (e) => {
+  if (itemSelect3.value ==='LaundryService') {
+    itemForm3.classList.remove('hidden');
+  } else {
+    itemForm3.classList.add('hidden');
+  }
+});
+
+
+</script>
+
+
+
+<!-- Show hidden form content on selection finish -->
+
+
+
+
+
+
+<!-- Form Script -->
+
+
+<script>
+    const quantityInputs = document.querySelectorAll('.product-quantity');
+const selectedList = document.getElementById('selected-list');
+const totalPriceElement = document.getElementById('total-price');
+
+let selectedProducts = [];
+let totalPrice = 0;
+
+quantityInputs.forEach((input) => {
+  input.addEventListener('change', (e) => {
+    const product = input.parentNode.parentNode.querySelector('h2').textContent;
+    const price = parseInt(input.getAttribute('data-price'));
+    const quantity = parseInt(input.value);
+
+    const existingProductIndex = selectedProducts.findIndex((item) => item.product === product);
+
+    if (existingProductIndex !== -1) {
+      // Update quantity for existing product
+      selectedProducts[existingProductIndex].quantity = quantity;
+      selectedProducts[existingProductIndex].subtotal = price * quantity;
+    } else {
+      // Add new product
+      selectedProducts.push({
+        product: product,
+        quantity: quantity,
+        subtotal: price * quantity,
+      });
+    }
+
+    updateSelectedList();
+    updateTotalPrice();
+  });
+});
+
+function updateSelectedList() {
+  selectedList.innerHTML = '';
+  selectedProducts.forEach((item) => {
+    const li = document.createElement('li');
+    li.innerHTML = `${item.product} - Quantity: ${item.quantity} - Subtotal: $${item.subtotal}`;
+    selectedList.appendChild(li);
+  });
+}
+
+function updateTotalPrice() {
+  totalPrice = selectedProducts.reduce((total, item) => total + item.subtotal, 0);
+  totalPriceElement.textContent = `Total Price: $${totalPrice}`;
+}
+
+
+
+// _________________________Office Cleaning Section________________
+
+const quantityInputs2 = document.querySelectorAll('.product-quantity2');
+const selectedList2 = document.getElementById('selected-list2');
+const totalPriceElement2 = document.getElementById('total-price2');
+
+let selectedProducts2 = [];
+let totalPrice2 = 0;
+
+quantityInputs2.forEach((input) => {
+  input.addEventListener('change', (e) => {
+    const product = input.parentNode.parentNode.querySelector('h2').textContent;
+    const price = parseInt(input.getAttribute('data-price'));
+    const quantity = parseInt(input.value);
+
+    const existingProductIndex = selectedProducts2.findIndex((item) => item.product === product);
+
+    if (existingProductIndex !== -1) {
+      // Update quantity for existing product
+      selectedProducts2[existingProductIndex].quantity = quantity;
+      selectedProducts2[existingProductIndex].subtotal = price * quantity;
+    } else {
+      // Add new product
+      selectedProducts2.push({
+        product: product,
+        quantity: quantity,
+        subtotal: price * quantity,
+      });
+    }
+
+    updateSelectedList2();
+    updateTotalPrice2();
+  });
+});
+
+function updateSelectedList2() {
+  selectedList2.innerHTML = '';
+  selectedProducts2.forEach((item) => {
+    const li = document.createElement('li');
+    li.innerHTML = `${item.product} - Quantity: ${item.quantity} - Subtotal: $${item.subtotal}`;
+    selectedList2.appendChild(li);
+  });
+}
+
+function updateTotalPrice2() {
+  totalPrice2 = selectedProducts2.reduce((total, item) => total + item.subtotal, 0);
+  totalPriceElement2.textContent = `Total Price: $${totalPrice2}`;
+}
+
+
+
+// _____________________________Laundry Section________________________________
+
+
+
+
+const quantityInputs3 = document.querySelectorAll('.product-quantity3');
+const selectedList3 = document.getElementById('selected-list3');
+const totalPriceElement3 = document.getElementById('total-price3');
+
+let selectedProducts3 = [];
+let totalPrice3 = 0;
+
+quantityInputs3.forEach((input) => {
+  input.addEventListener('change', (e) => {
+    const product = input.parentNode.parentNode.querySelector('h2').textContent;
+    const price = parseInt(input.getAttribute('data-price'));
+    const quantity = parseInt(input.value);
+
+    const existingProductIndex = selectedProducts3.findIndex((item) => item.product === product);
+
+    if (existingProductIndex !== -1) {
+      // Update quantity for existing product
+      selectedProducts3[existingProductIndex].quantity = quantity;
+      selectedProducts3[existingProductIndex].subtotal = price * quantity;
+    } else {
+      // Add new product
+      selectedProducts3.push({
+        product: product,
+        quantity: quantity,
+        subtotal: price * quantity,
+      });
+    }
+
+    updateSelectedList3();
+    updateTotalPrice3();
+  });
+});
+
+function updateSelectedList3() {
+  selectedList3.innerHTML = '';
+  selectedProducts3.forEach((item) => {
+    const li = document.createElement('li');
+    li.innerHTML = `${item.product} - Quantity: ${item.quantity} - Subtotal: $${item.subtotal}`;
+    selectedList3.appendChild(li);
+  });
+}
+
+function updateTotalPrice3() {
+  totalPrice3 = selectedProducts3.reduce((total, item) => total + item.subtotal, 0);
+  totalPriceElement3.textContent = `Total Price: $${totalPrice3}`;
+}
+</script>
+<!-- Form Script Ended-->
+
+
+
 </body>
 </html> 
