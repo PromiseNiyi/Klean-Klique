@@ -49,9 +49,6 @@ function updateTotalPrice() {
 
 // _________________________Office Cleaning Section________________
 
-
-
-
 const quantityInputs2 = document.querySelectorAll('.product-quantity2');
 const selectedList2 = document.getElementById('selected-list2');
 const totalPriceElement2 = document.getElementById('total-price2');
