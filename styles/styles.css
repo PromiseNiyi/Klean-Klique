@@ -366,6 +366,7 @@ margin-bottom: 10px;
     text-align: center;
     padding-top:100px;
     padding-bottom: 20px;
+    height: 70vh;
     
 }
 
@@ -673,9 +674,10 @@ ____________________________*/
     }
 
     .Learn-more {
+        margin-bottom: 15px;
         opacity: 0; 
         position: relative;
-        bottom: -40px;
+        bottom: 50px;
         transition: all 2s ease;
     }
     .section3flex{
@@ -698,7 +700,7 @@ ____________________________*/
         transition-delay: 0.3s;
     }
 
-    .form{
+    .form2{
         opacity: 0; 
         position: relative;
         bottom: -40px;

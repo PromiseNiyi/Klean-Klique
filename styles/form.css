@@ -1,0 +1,118 @@
+
+
+
+.center-form{
+  overflow: hidden;
+   
+  }
+
+  .form2{
+    background-color:#0a1542;
+    display: inline-block;
+    position: relative;
+    
+     width: 30%;
+    margin: 0;
+    padding: 20px 25px;
+    text-align: center;
+    margin-bottom: 0;
+    align-items: center;
+    align-self: center;
+    border-radius:15px;
+    text-align: center;
+    height: auto;
+    transition: all 0.7s ease;
+    overflow: hidden;
+  }
+
+
+  .form2 input {
+    font-family: "montserrat", poppins, sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 5px ;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .form2 button {
+    font-family: "montserrat", poppins, sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #4CAF50;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 5px ;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+    
+  }
+
+  .form2 button:hover{
+    background-color: #4caf4fcc;
+    transform: translateY(-2px);
+  }
+
+  .primary-select{
+    font-family: "montserrat", poppins, sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px ;
+    text-align: left;
+    transition: all 0.3 ease;
+    transition: all 0.3s ease;
+  }
+
+  .instruction-link2{
+    
+    padding: 10px 25px;
+    margin-top: 10px;
+   
+    
+  }
+  .instruction-link2 p{
+    font-family: "montserrat", poppins, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    color: white;
+  } 
+
+  .instruction-link2 p a{
+    text-decoration: none;
+    color:#0092f5;
+  }
+
+
+  .contact-form2  h5{
+    font-family: "montserrat", poppins, sans-serif;
+    align-items: left;
+    text-align: left;
+    padding-left: 2px;
+    font-size: 10px;
+    top:0;
+    transform: translateY(-10px);
+    color: white;
+    overflow: hidden;
+      }
+
+
+
+   

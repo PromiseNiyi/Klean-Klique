@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klean Klique</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/formstyle.css">
     <link rel="stylesheet" type="text/css" href="styles/top.css">
-    <script src="newtop.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/innerformstyle.css">
+    <link rel="stylesheet" href="styles/form.css">
 
-    <script type="text/javascript" src="nav.js" defer></script>
+    <script src="scripts/newtop.js"></script>
+    
+    <script type="text/javascript" src="scripts/nav.js" defer></script>
+    <script type="text/javascript" src="scripts/topscript.js"></script>
+    <script type="text/javascript" src="scripts/formscript.js"></script>
+    <script type="text/javascript" src="scripts/hidden.js"></script>
     <script src="https://kit.fontawesome.com/a1708c9e84.js" crossorigin="anonymous"></script>
     <link rel = "icon" href = "icons/xdemo.png" type = "image/x-icon">
 </head>
@@ -140,59 +145,230 @@
 
 </Section>
 
-<!--_______________________________________________________________________________-->
+<!--___________________form section____________________________________________________________-->
 
+<section class="formsection">
 
-<section class="section-four">
-  
-    <h1>Contact Us</h1>
-    <div>
-        <div class="form2">
+    <div class = "center-form">
+       <div class="form2">
             <form class="contact-form2" >
-                <div class="formflex">
-                    <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
-                    <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
-                    <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
+               
+                <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
+                <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
+                <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
+                 <label for="primary-select"></label>         
+                <select class="primary-select" name="primary-select" id="primary-select">
                     
+                    <option value="No Service selected">Select a Service</option>
+                    <option value="HomeCleaning">Home Cleaning</option>
+                    <option value="OfficeCleaning">Office Cleaning</option>
+                    <option value="EventCleaning">Event Cleaning</option>
+                    <option value="LaundryService">Laundry Service</option>
                     
-                    <select class="primary-select" name="primary-select" id="primary-select">
-                        
-                        <option value="No Service selected">Select a Service</option>
-                        <option value="Home Cleaning">Home Cleaning</option>
-                        <option value="Office Cleaning">Office Cleaning</option>
-                        <option value="Event Cleaning">Event Cleaning</option>
-                        <option value="Laundry Service">Laundry Service</option>
-                        
-                       </select>
+                </select>
+    
+    <!-- Section for Home cleaning -->
+    
+                <div id="item-form" class="hidden">
+                  <h1>Select Wears accordingly</h1>
+                  <div class="hidden-child">
+    
+                   
+      
+                    <div class="product">
+                      <h2>Rooms</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="10">
+                      </div>
+                    </div>
+      
+                    <div class="product">
+                      <h2>Toilets</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="20">
+                      </div>
+                    </div>
+      
+                    <div class="product">
+                      <h2>Living Room</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="30">
+                      </div>
+                    </div>
+      
+                    <div class="product">
+                      <h2>Kitchen</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity" min="0" step="1" data-price="5">
+                      </div>
+                    </div>
+      
+                    <div class="selected-products">
+                      <div class="hline">
+                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                      </div>
+                      
+                      <h2>Cost Of Selected Services</h2>
+                      <ul id="selected-list"></ul>
+                      <div id="total-price">Total Price: $0</div>
+                    </div>
+                    
+                  </div>
+                  <div class="space"></div>
                 </div>
-              
-
-                 <div class="formflex">
+    
+    <!-- Section for office cleaning -->
+    
+                <div id="item-form2" class="hidden">
+                  <h1>Select Ofice Information</h1>
+                  <div class="hidden-child">
+    
+                   
+      
+                    <div class="product2">
+                      <h2>Tables</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="100" >
+                      </div>
+                    </div>
+      
+                    <div class="product2">
+                      <h2>Chairs</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="200">
+                      </div>
+                    </div>
+      
+                    <div class="product2">
+                      <h2>Offices</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="300">
+                      </div>
+                    </div>
+      
+                    <div class="product2">
+                      <h2>Desks</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity2" min="0" step="1" data-price="50">
+                      </div>
+                    </div>
+      
+                    <div class="selected-products">
+                      <div class="hline">
+                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                      </div>
+                      
+                      <h2>Cost Of Selected Services</h2>
+                      <ul id="selected-list2"></ul>
+                      <div id="total-price2">Total Price: $0</div>
+                    </div>
+                    
+                  </div>
+                  <div class="space"></div>
+                </div>
+    
+    
+    
+    
+       <!-- Section for laundry -->
+    
+                <div id="item-form3" class="hidden">
+                  <h1>Select Ofice Information</h1>
+                  <div class="hidden-child">
+    
+                   
+      
+                    <div class="product3">
+                      <h2>Suits</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="150" >
+                      </div>
+                    </div>
+      
+                    <div class="product3">
+                      <h2>Shirts</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                      </div>
+                    </div>
+      
+                    <div class="product3">
+                      <h2>Trousers</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                      </div>
+                    </div>
+      
+                    <div class="product3">
+                      <h2>Inner Wears</h2>
+                      <div class="product-item">
+                        <span>Quantity:</span>
+                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                      </div>
+                    </div>
+      
+                    <div class="selected-products">
+                      <div class="hline">
+                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                      </div>
+                      
+                      <h2>Cost Of Selected Services</h2>
+                      <ul id="selected-list3"></ul>
+                      <div id="total-price3">Total Price: $0</div>
+                    </div>
+                    
+                  </div>
+                  <div class="space"></div>
+                </div>
+                
+                
+    
                 <input required="" type="text" placeholder="Location" id="Location" name="Location"/>
                 <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Busstop"/>
                 <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Day"/>
-                <h5>Preferred cleaning Day</h5>
+                <h5>Preferred Cleaning Day</h5>
                 
                 
                 <button type="submit">Contact</button>
-                 </div>
-
+               
+    
                            
             </form>
-
+    
             <div class="instruction-link2">
                 <p>If you prefer to reach Us via WhatsApp, <a href="#">Click Here</a>
-
+    
                 </p>
             </div> 
             
     </div>
-
-
-</section>
+    
+    </section>
+    
+      
+    
+    
+    
+      
+    
+     
 
 
 <!--_______________________________________________________________________________-->
+
+
+
 <p class="header"> Go to Top  </p>
     
     <footer class="foot">
@@ -214,7 +390,7 @@
 
 
 
-
+<!-- Appear on scroll -->
 
 <script>
     window.addEventListener('DOMContentLoaded', setup); 
@@ -252,7 +428,7 @@ function setup() {
     const pa = document.querySelectorAll('.instruction-link');
     pa.forEach(p => observer.observe(p));
 
-    const forms = document.querySelectorAll('.form');
+    const forms = document.querySelectorAll('.form2');
     forms.forEach(p => observer.observe(p));
 
 }
@@ -262,7 +438,7 @@ function setup() {
 </script>
 
 
-
+<!-- Appear on scroll finish -->
 
 
 
