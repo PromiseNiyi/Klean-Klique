@@ -10,6 +10,8 @@ itemSelect.addEventListener('change', (e) => {
 });
 
 
+
+
 const itemSelect2 = document.getElementById('primary-select');
 const itemForm2 = document.getElementById('item-form2');
 
@@ -20,6 +22,8 @@ itemSelect.addEventListener('change', (e) => {
     itemForm2.classList.add('hidden');
   }
 });
+
+
 
 
 const itemSelect3 = document.getElementById('primary-select');
