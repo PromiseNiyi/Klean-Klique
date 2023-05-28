@@ -25,7 +25,7 @@ li, a, button{
 font-family:"montserrat", poppins, sans-serif;
 font-weight: 500;
 font-size: 15x;
-color:rgb(15, 119, 255, 1);
+color:#0a1542;
 text-decoration: none;
 
 }
@@ -63,11 +63,12 @@ header{
 
 	
 .sticky{
-	background-color: rgba(167, 204, 247, 0.8);
+	background-color: #0093f5ab;
 	height: 10vh;
 	width: 100%;
     backdrop-filter: blur(5px);
     overflow-y: hidden;
+    
 
 }
 
@@ -96,12 +97,12 @@ nav{
 }
 
 .nav_links li a:hover{
-    color: rgba(15, 171, 255, 0.8);
+    color: #0f598a;
 }
 .call-us-now button{
    
     padding: 10px 25px;
-    background-color: rgb(15, 119, 255, 1);
+    background-color: #0092f5;
     border: none;
    border-radius: 50px;
    cursor:pointer;
@@ -110,7 +111,7 @@ nav{
 }
 button{
     padding: 9px 35px;
-     background-color: rgb(15, 119, 255, 1);
+     background-color: #0092f5;
      border: none;
     border-radius: 50px;
     cursor:pointer;
@@ -122,7 +123,7 @@ i{
     padding: 2px 0 0 10px;
 }
 button:hover{
-    background-color: rgb(15, 119, 255, 0.8);
+    background-color: #0093f5e2;
 }
 
 section{
@@ -151,7 +152,7 @@ section{
  
 
     width: 100%;
-    color: rgb(15, 119, 255, 1);
+    color: #0092f5;
 	text-align: left;
 	font-size: 50px;
 	margin-bottom: 0px;
@@ -186,8 +187,12 @@ section{
     display: block;
     height: 110%;
     padding-left: 10px;
-    color: #0e6ffc;
+    color:#0a1542;
     animation: spin_words 8s infinite;
+}
+
+.wrapper .rotate{
+    color: #0a1542;
 }
 
 @keyframes spin_words{
@@ -253,7 +258,7 @@ overflow: hidden;
 height: 80vh;
 padding-top:50px;
 font-size: 20px;
-color :  rgb(45, 45, 45);
+color :  #0a1542;
 display: block;
 align-items: center;
 justify-content: center;
@@ -273,7 +278,7 @@ overflow: hidden;
     text-align: center;
     font-size: 14px;
     line-height: 25px;
-    color :  rgb(45, 45, 45);
+    color :  #0a1542;
 }
 
 .pictures{
@@ -302,7 +307,7 @@ overflow: hidden;
     text-align: center;
     border-radius: 25px;
     font-size: 14px;
-    color: rgb(41, 41, 41);
+    color: #0a1542;
     box-shadow: 0 0.5px 5px 1px rgba(165, 165, 165, 0.1), 0 4px 20px 0 rgba(204, 204, 204, 0.19);
     cursor: pointer;
     overflow-y: hidden;
@@ -318,20 +323,24 @@ overflow: hidden;
 
 .illustrate h3{
 margin-bottom: 10px;
+color: #0a1542;
 }
 .illustrate p{
     line-height: 30px;
+    color: #0a1542;
 }
 
 .illustrate i{
     font-size: 25px;
     margin-bottom: 80px;
+    color: #0a1542;
 }
 
 .Learn-more button{
     margin-top: 5%;
     padding: 15px 25px;
     text-align: center;
+    background-color: #0092f5;
 }
 
 
@@ -358,7 +367,7 @@ margin-bottom: 10px;
 .section-three{
 
     font-size: 20px;
-    color :  rgb(45, 45, 45);
+    color :  #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,6 +376,7 @@ margin-bottom: 10px;
     padding-top:100px;
     padding-bottom: 20px;
     height: 70vh;
+    background-color: #0a1542;
     
 }
 
@@ -379,6 +389,10 @@ margin-bottom: 10px;
     overflow: hidden;
     margin-bottom: 0;
     
+}
+
+.section3flex p{
+    color: #d3d3d3;
 }
 
 
@@ -795,7 +809,6 @@ ____________________________*/
             display: block;
             height: 110%;
             padding-left: 10px;
-            color: #0e6ffc;
             animation: spin_words 8s infinite;
         }
     
@@ -946,16 +959,16 @@ ____________________________*/
            
         }
         .navigate{
-            width: 40%;
+            width: 100%;
             position: fixed;
             inset: 0 60% 0 0;
-            background-color: rgba(14, 14, 33, 0.5);
+            background-color: #0a1542;
             display: block;
             text-align: center;
             padding: min(30vh, 10rem) 2em;
             transition: all 0.5s ease;
             transform: translateX(-100%);
-           z-index: 5000;
+            z-index: 5000;
         }
         .navigate[data-visible="true"]{
             transform: translateX(-0%);
@@ -1065,7 +1078,7 @@ ____________________________*/
             z-index:1000;
         }
         .stick{
-            background-color: rgba(167, 204, 247, 0.8);
+            background-color: #0093f5ab;
             height: 10vh;
             width: 100%;
             backdrop-filter: blur(5px);
@@ -1131,103 +1144,103 @@ ____________________________*/
     padding: 0 25px;
 }
         
-        .section-two{
-            height:auto
-        }
-
-
-        .service-img{
-            margin: 10%;
-            width: 100%;
-            height: 20vh;
-            overflow: hidden;
-            border-radius: 10px;
-            
-           }
-       
-           .service-flexx{
-            display: block;
-            margin:0 50px;
-        }
-
-        .service-writeup{
-            margin-left: 10%;
-        }
-
-
-        .service-img{
-            margin-top: 20px;
-            width: 80%;
-            height: 20vh;
-            overflow: hidden;
-            border-radius: 10px;
-            
-           }
-           .section-three{
-            height: 60vh;
-            padding-top: 0;
-           }
-
-           .section-four{
-           padding-top: 35px;
-           height: 120vh;
-           }
-           .contact-section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            padding: 0 10%;
-            overflow: hidden;
-        }
-
-        .instruction-link p{
-            padding: 20%;
-            text-align: center;
-        
-        }
-        
-        footer{
-            height: 15vh;
-            width: 100%;
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 5% ;
-            text-align: center;  
-            overflow: hidden;
-            }
-
-
-
-            .contact-page-main h1{
-                font-size: 30px;
-               
-                
-            }
-
-            
-
-
-            .form2{
-                height: auto;
-            }
-
+    .section-two{
+        height:auto
     }
 
-    @media (max-width:50em){
-     
+
+    .service-img{
+        margin: 10%;
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+        border-radius: 10px;
+        
+        }
+    
+        .service-flexx{
+        display: block;
+        margin:0 50px;
+    }
+
+    .service-writeup{
+        margin-left: 10%;
+    }
+
+
+    .service-img{
+        margin-top: 20px;
+        width: 80%;
+        height: 20vh;
+        overflow: hidden;
+        border-radius: 10px;
+        
+        }
+        .section-three{
+        height: 60vh;
+        padding-top: 0;
+        }
+
+        .section-four{
+        padding-top: 35px;
+        height: 120vh;
+        }
+        .contact-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10%;
+        overflow: hidden;
+    }
+
+    .instruction-link p{
+        padding: 20%;
+        text-align: center;
+    
+    }
+    
+    footer{
+        height: 15vh;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5% ;
+        text-align: center;  
+        overflow: hidden;
+        }
+
+
+
+        .contact-page-main h1{
+            font-size: 30px;
+            
+            
+        }
 
         
 
-        .section-one h1{
-            font-size: 40px;
+
+        .form2{
+            height: auto;
         }
-        .rotate{
-            font-size: 40px;
-        }
+
+}
+
+@media (max-width:50em){
+    
+
+    
+
+    .section-one h1{
+        font-size: 40px;
+    }
+    .rotate{
+        font-size: 40px;
+    }
 
 .section-three{
     height: 50vh;
