@@ -23,7 +23,7 @@
     <header>
     
         <button class ="nav-toggle" aria-controls="primary-navigation" aria-expanded ="false">
-           <img src="icons/menu.png" alt=""> <span class="sr-only"> </span>
+           <img src="icons/thin-menu.png" alt=""> <span class="sr-only"> </span>
             
         </button>
         <button class ="nav-togglecancel" aria-controls="primary-navigation" aria-expanded ="false" data-visible="false">
@@ -47,6 +47,7 @@
  
     <a class="call-us-now" href="tel:1234"> <button>Call Us Now <i class="fa-solid fa-phone-flip"></i></button> </a>
  </header>
+ <div class="header2"></div>
 
  
 <!--____________________________
@@ -209,6 +210,18 @@ _______________________________________________-->
 		header.classList.toggle("sticky", window.scrollY > 0);
 
 	})
-</script>   
+</script>  
+
+
+<!--_______________________________________________________________________________-->
+<script type="text/javascript">
+	window.addEventListener("scroll", function(){
+		var header2 = document.querySelector(".header2");
+		header2.classList.toggle("stick", window.scrollY > 0);
+
+	})
+</script>
+
+
 </body>
 </html> 

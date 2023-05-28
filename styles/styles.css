@@ -38,7 +38,7 @@ header{
     position: fixed;
 	width: 100%;
 	transition: all 0.2s ease 0s;
-	z-index: 1000;
+	z-index: 9999;
     background: none;
   
 } 
@@ -955,7 +955,7 @@ ____________________________*/
             padding: min(30vh, 10rem) 2em;
             transition: all 0.5s ease;
             transform: translateX(-100%);
-           
+           z-index: 5000;
         }
         .navigate[data-visible="true"]{
             transform: translateX(-0%);
@@ -991,7 +991,7 @@ ____________________________*/
 
         .nav-toggle img{
             aspect-ratio: 1;
-            width: 50px;
+            width: 40px;
         }
 
         /* .nav-toggle[aria-expanded="true"]{
@@ -1006,13 +1006,15 @@ ____________________________*/
 
         .nav-togglecancel{
             overflow: hidden;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             /* background-image: url(/icons/menu.png); */
-            background-color: transparent;
+            background-color: rgb(215, 58, 58);
             border: none;
             aspect-ratio: 1;
-            border-radius: 5px;
+            border-radius: 8px;
             padding: 0;
             width:2rem;
             top: 2rem;
@@ -1025,11 +1027,11 @@ ____________________________*/
         }
 
         .nav-togglecancel:hover{
-            background-color: transparent;
+            background-color: rgb(215, 58, 58);
         }
         .nav-togglecancel img{
             aspect-ratio: 1;
-            width: 40px;
+            width: 20px;
         }
         .nav-togglecancel[data-visible="true"]{
             transform: translateX(-0%);
@@ -1056,6 +1058,19 @@ ____________________________*/
         .sticky{
             background: none;
             backdrop-filter: none;
+        }
+
+        .header2{
+            position: fixed;
+            z-index:1000;
+        }
+        .stick{
+            background-color: rgba(167, 204, 247, 0.8);
+            height: 10vh;
+            width: 100%;
+            backdrop-filter: blur(5px);
+            overflow-y: hidden;
+             
         }
 
     }
