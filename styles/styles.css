@@ -118,6 +118,10 @@ button{
     transition: all 0.3s ease 0s;
     color: white;
 }
+
+
+   
+   
 i{
     font-size: 12px;
     padding: 2px 0 0 10px;
@@ -169,12 +173,16 @@ section{
 .wrapper{
     box-sizing: content-box;
     background-color:none;
-    height: 100px;
+    height: 110px;
     overflow: hidden;
     
     display: flex;
     border-radius: 8px;
     box-shadow: none;
+}
+
+.wrapper h1{
+    overflow: hidden;
 }
 
 .words{
@@ -189,6 +197,7 @@ section{
     padding-left: 10px;
     color:#0a1542;
     animation: spin_words 8s infinite;
+    overflow: hidden;
 }
 
 .wrapper .rotate{
@@ -234,13 +243,14 @@ section{
 }
 
 .bookbutton{
- height: 15%;
+ height: 20%;
 width: 100%;
 display:flex;
 align-items: center;
 justify-content:center;
 transform: translateY(100%);
 overflow: hidden;
+padding: 10px 0;
 }
 
 
@@ -256,7 +266,8 @@ overflow: hidden;
 
 .section-two{
 height: 80vh;
-padding-top:50px;
+padding-top:30px;
+padding-bottom: 30px;
 font-size: 20px;
 color :  #0a1542;
 display: block;
@@ -377,7 +388,14 @@ color: #0a1542;
     padding-bottom: 20px;
     height: 70vh;
     background-color: #0a1542;
+    overflow: hidden;
     
+}
+
+.section-3{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
 }
 
 .section-three h1{
@@ -387,7 +405,8 @@ color: #0a1542;
 
 .section3flex{
     overflow: hidden;
-    margin-bottom: 0;
+    margin-bottom: 25px;
+   
     
 }
 
@@ -396,7 +415,18 @@ color: #0a1542;
 }
 
 
-
+.section-three .bookbutton{
+    height: 15%;
+   width: 100%;
+   display:flex;
+   align-items: center;
+   justify-content:center;
+   transform: translateY(-40%);
+   overflow: hidden;
+   padding: 10px 0;
+   background-color: red;
+   }
+   
 
     
 /*_______________________________________________________________*/
@@ -699,7 +729,7 @@ ____________________________*/
     .section3flex{
         opacity: 0; 
         position: relative;
-        bottom: -40px;
+        bottom: -70px;
         transition: all 1s ease;
     }
     .Explore2{
@@ -719,7 +749,7 @@ ____________________________*/
     .form{
         opacity: 0; 
         position: relative;
-        bottom: -40px;
+        bottom: -5px;
         transition: all 1s ease;
     }
 
@@ -940,6 +970,16 @@ ____________________________*/
 
     }
     @media (max-width:70em){
+
+        .section-one h1{
+            font-size: 50px;
+        }
+        .rotate{
+            font-size: 50px;
+        }
+
+
+
         header{
 
             margin-right: 0;
@@ -1090,6 +1130,14 @@ ____________________________*/
 
 
     @media (max-width:60em){
+
+        .section-one h1{
+            font-size: 50px;
+        }
+        .rotate{
+            font-size: 50px;
+        }
+
         header{
             padding-right: 20px;
         }
@@ -1143,6 +1191,7 @@ ____________________________*/
 .section-one{
     padding: 0 25px;
 }
+
         
     .section-two{
         height:auto
@@ -1235,10 +1284,10 @@ ____________________________*/
     
 
     .section-one h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .rotate{
-        font-size: 40px;
+        font-size: 30px;
     }
 
 .section-three{
