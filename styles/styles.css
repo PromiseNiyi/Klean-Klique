@@ -10,12 +10,15 @@
     
 }
 body{
+   
     overflow-x:hidden ;
 }
 
 
 html{
     scroll-behavior: smooth;
+    height: 100vh;
+    height: -webkit-fill-available;
 }
 a{
     cursor: pointer;
@@ -971,6 +974,37 @@ ____________________________*/
 
     }
     @media (max-width:70em){
+        .navigate{
+            overflow: hidden;
+        }
+
+        .section-one1{
+            display: flex;
+            align-items: center;
+            padding-top: 10%;
+            justify-content: center;
+         }
+    .bookbutton{
+        transform: translateY(-20px);
+    }
+    .contact-page-main{
+        padding-top: 20%;
+        height: auto;
+        min-height: 30%;
+        font-size: 10px;
+        padding-bottom: 10%;
+    }    
+
+    .contact-page-main h1, .newservice h1{
+        font-size: 20px;
+    }
+
+.newservice{
+    padding-top: 25%;
+    height: auto;
+    min-height: 30%;
+    font-size: 10px;
+}
 
         .section-one h1{
             font-size: 50px;
@@ -1022,6 +1056,11 @@ ____________________________*/
             }
         }
 
+        .call-us-now{
+            position: sticky;
+            transition: all 0.5s ease;
+        }
+
         .nav-toggle{
             overflow: hidden;
             display: flex;
@@ -1036,11 +1075,13 @@ ____________________________*/
             width:2rem;
             top: 2rem;
             left: 5rem;
-            z-index: 0;
+            z-index:0 ;
             background-repeat: no-repeat;
             background-size: contain;
             transition: all 0.5s ease-in-out;
-            
+            transform: translateY(-6px);
+            /* transform: translateX(-450%); */
+           
         }
 
         .nav-toggle img{
@@ -1063,7 +1104,7 @@ ____________________________*/
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
+            position: fixed;
             /* background-image: url(/icons/menu.png); */
             background-color: rgb(215, 58, 58);
             border: none;
@@ -1112,6 +1153,7 @@ ____________________________*/
         .sticky{
             background: none;
             backdrop-filter: none;
+            /* height: 20%; */
         }
 
         .header2{
@@ -1120,40 +1162,54 @@ ____________________________*/
         }
         .stick{
             background-color: #0093f5ab;
-            height: 10vh;
+            height: auto;
             width: 100%;
             backdrop-filter: blur(5px);
             overflow-y: hidden;
+                  
              
         }
 
+        .resizehelper{
+            margin-top: 5.5vh;
+            margin-bottom: 2vh;
+            height: 5vh;
+            
+        }
+
+        .section-three{
+            height: auto;
+            min-height: 60vh;
+            
+        }
+
+        .list--item{
+            height: auto;
+            padding-bottom: 20px;
+            border-radius: 15px;
+        }
+
+    
+        
     }
 
 
 
 
     @media (max-width:60em){
+   
 
-        
-        .stick{
-            background-color:#0093f5ab;
-            height: 10vh;
-            width: 100%;
-            backdrop-filter: blur(5px);
-            overflow-y: hidden;
-             
-        }
+   
+.section-one h1{
+    font-size: 50px;
+}
+.rotate{
+    font-size: 50px;
+}
 
-        .section-one h1{
-            font-size: 50px;
-        }
-        .rotate{
-            font-size: 50px;
-        }
-
-        header{
-            padding-right: 20px;
-        }
+header{
+    padding-right: 20px;
+}
 
 .header-flex{
    
@@ -1168,7 +1224,7 @@ ____________________________*/
 
 
 .nav-toggle{
-    left: 3rem;
+    left: 1.5rem;
 }
 
 
@@ -1263,6 +1319,9 @@ ____________________________*/
     
     }
     
+
+
+    
     footer{
         height: 15vh;
         width: 100%;
@@ -1276,11 +1335,7 @@ ____________________________*/
 
 
 
-        .contact-page-main h1{
-            font-size: 30px;
-            
-            
-        }
+     
 
         
 
@@ -1292,10 +1347,24 @@ ____________________________*/
 }
 
 @media (max-width:50em){
-    
+    .stick{
+        background-color: #0093f5ab;
+        height: auto;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        overflow-y: hidden;
+              
+         
+    }
+
+    .resizehelper{
+        margin-top: 1.5vh;
+        margin-bottom: 7vh;
+        height: 5vh;
+        
+    }
 
 
-    
 
     .section-one h1{
         font-size: 30px;
@@ -1305,7 +1374,7 @@ ____________________________*/
     }
 
 .section-three{
-    height: 50vh;
+    height: auto;
     padding-top:10px;
     padding-bottom: 20px;
 }
@@ -1348,11 +1417,13 @@ ____________________________*/
         .about-writeup:hover{
             font-size: 18px; 
     }
-
+    .list-content{
+        padding: 15px 12% 0 12%;
+     }
 
     
         footer{
-            height: 35vh;
+            height: auto;
             width: 100%;
             display: flex;
             flex-direction: column;
