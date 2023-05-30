@@ -17,8 +17,8 @@ body{
 
 html{
     scroll-behavior: smooth;
-    height: 100vh;
-    height: -webkit-fill-available;
+    /* height: 100vh; */
+    /* height: -webkit-fill-available; */
 }
 a{
     cursor: pointer;
@@ -913,7 +913,7 @@ ____________________________*/
            }
 
         .illustrate{
-            padding: 10px 50px 30px 50px;
+            padding: 50px 50px 30px 50px;
             background-color:  rgb(255, 255, 255);
             height: 20%;
             width: 80%;
@@ -1018,6 +1018,7 @@ ____________________________*/
         header{
 
             margin-right: 0;
+            padding-bottom: 100px;
             padding-right: 100px;         
             justify-content: right;
             background-color: none;
@@ -1079,7 +1080,7 @@ ____________________________*/
             background-repeat: no-repeat;
             background-size: contain;
             transition: all 0.5s ease-in-out;
-            transform: translateY(-6px);
+            /* transform: translateY(-6px); */
             /* transform: translateX(-450%); */
            
         }
@@ -1096,6 +1097,7 @@ ____________________________*/
         .nav-toggle:hover{
             background-color:rgba(255, 255, 255, 0.682);;
             transform: translateX(5px);
+            /* transform: translateY(6px); */
         }
 
 
