@@ -156,6 +156,7 @@ section{
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
+    overflow: hidden;
 
 }
 
@@ -170,8 +171,15 @@ section{
 	margin-bottom: 0px;
     display:flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 50px;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    overflow: hidden;
+}
+
+.section-one img{
+    aspect-ratio: 1;
+    max-width:50% ;
+    margin-top: 10%;
     overflow: hidden;
 }
 
@@ -260,6 +268,10 @@ justify-content:center;
 transform: translateY(100%);
 overflow: hidden;
 padding: 10px 0;
+}
+
+.section-one .book-appointment{
+    margin-top: 20px;
 }
 
 
@@ -789,12 +801,14 @@ ____________________________*/
     /*_____________responsive_______________________________*/
     @media (max-width:100em){
 
+
         .navigate{
             width:65%; 
            
         }
 
 
+       
         .illustrate{
             padding: 10px 50px;
             background-color:  rgb(255, 255, 255);
@@ -823,7 +837,15 @@ ____________________________*/
 
 
         .section-one h1{
-            font-size: 80px;
+            font-size: 60px;
+        }
+        .rotate{
+            font-size: 60px;
+            font-weight: bold;
+            display: block;
+            height: 110%;
+            padding-left: 5px;
+            animation: spin_words 8s infinite;
         }
         .wrapper{
             box-sizing: content-box;
@@ -835,19 +857,17 @@ ____________________________*/
             border-radius: 8px;
             box-shadow: none;
         }
+
+
+        .section-one .book-appointment{
+            margin-top: 40px;
+        }
         
         .words{
             overflow: hidden;
         }
         
-        .rotate{
-            font-size: 80px;
-            font-weight: bold;
-            display: block;
-            height: 110%;
-            padding-left: 10px;
-            animation: spin_words 8s infinite;
-        }
+      
     
         
         .list--item {
@@ -898,6 +918,23 @@ ____________________________*/
 
 
     @media (max-width:90em){
+
+        .section-one{
+    
+          
+            padding: 0 20px 0 60px;
+            overflow: hidden;
+        }
+        .section-one img{ 
+            margin-top:0;
+            max-width:50% ;
+        } 
+
+
+        .section-one .book-appointment{
+            margin-top: 60px;
+        }
+        
 
 
         .navigate{
@@ -988,9 +1025,21 @@ ____________________________*/
             padding-top: 10%;
             justify-content: center;
          }
-    .bookbutton{
+
+         .section-one{
+    
+          
+            padding: 0 20px 0 60px;
+            overflow: hidden;
+        }
+        .section-one img{ 
+            margin-top:0;
+            max-width:50% ;
+        }   
+
+    /* .bookbutton{
         transform: translateY(-20px);
-    }
+    } */
     .contact-page-main{
         padding-top: 20%;
         height: auto;
@@ -1203,7 +1252,7 @@ ____________________________*/
 
 
     @media (max-width:60em){
-   
+  
 
    
 .section-one h1{
@@ -1265,8 +1314,17 @@ header{
 
 .section-one{
     padding: 0 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-one img{
+    max-width: 60%;
 }
 
+.section-one .book-appointment{
+    margin-top: 10px;
+  }
         
     .section-two{
         height:auto
@@ -1370,14 +1428,15 @@ header{
         
     }
 
-
-
-    .section-one h1{
-        font-size: 30px;
+    .section-one img{
+        max-width: 100%;
     }
-    .rotate{
-        font-size: 30px;
+    
+
+    .section-one h1, .rotate{
+        font-size: 45px;
     }
+  
 
 .section-three{
     height: auto;
@@ -1424,7 +1483,7 @@ header{
             font-size: 18px; 
     }
     .list-content{
-        padding: 15px 12% 0 12%;
+        padding: 15px 10% 0 11%;
      }
 
     
