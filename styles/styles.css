@@ -75,6 +75,10 @@ header{
 
 }
 
+/* .sticky [header]{
+color: red;
+background-color: rgb(247, 149, 149);
+} */
 
 .logo{
     cursor: pointer;
