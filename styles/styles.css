@@ -197,6 +197,10 @@ section{
     box-shadow: none;
 }
 
+.wrapclas{
+    overflow: hidden;
+}
+
 .wrapper h1{
     overflow: hidden;
 }
@@ -1053,7 +1057,7 @@ ____________________________*/
     }
 
 .newservice{
-    padding-top: 25%;
+    padding-top: 15%;
     height: auto;
     min-height: 30%;
     font-size: 10px;
@@ -1237,14 +1241,39 @@ ____________________________*/
             min-height: 60vh;
             
         }
-
+        /* .list--item {
+            display: block; 
+             align-items: cent;
+           width: 80%;
+           height: 70vh;
+            border-radius: 5px;
+           background-color:  rgb(255, 255, 255);
+           box-shadow: 0 0.5px 5px 1px rgba(165, 165, 165, 0.1), 0 4px 20px 0 rgba(204, 204, 204, 0.19);
+            margin: 25px;
+            padding: 0;
+            transition: all 0.5s ease;
+            overflow: hidden;
+           
+          } */
         .list--item{
-            height: auto;
+            max-height: 60vh;
+           
             padding-bottom: 20px;
             border-radius: 15px;
         }
 
-    
+        .listt {
+            width: 100%;
+            display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+             align-content: center;
+             overflow: hidden;
+             justify-items: center;
+           
+               }
         
     }
 
@@ -1429,7 +1458,7 @@ header{
     }
 
     .section-one img{
-        max-width: 100%;
+        max-width: 80%;
     }
     
 
