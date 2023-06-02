@@ -612,7 +612,7 @@ ____________________________*/
   
     .list--item {
       display: block; 
-       align-items: cent;
+       align-items: center;
      width: 80%;
      height: 70vh;
       border-radius: 5px;
@@ -1256,16 +1256,17 @@ ____________________________*/
            
           } */
         .list--item{
-            max-height: 60vh;
-           
+            height: auto;
+           min-height: 70vh;
             padding-bottom: 20px;
             border-radius: 15px;
+            margin: 10px;
         }
 
         .listt {
             width: 100%;
             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+             grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
              justify-content: center;
              align-items: center;
              text-align: center;
@@ -1284,12 +1285,10 @@ ____________________________*/
   
 
    
-.section-one h1{
-    font-size: 50px;
+.section-one h1,.rotate {
+    font-size: 35px;
 }
-.rotate{
-    font-size: 50px;
-}
+
 
 header{
     padding-right: 20px;
@@ -1428,8 +1427,6 @@ header{
 
 
 
-     
-
         
 
 
@@ -1463,7 +1460,7 @@ header{
     
 
     .section-one h1, .rotate{
-        font-size: 45px;
+        font-size: 35px;
     }
   
 
@@ -1512,10 +1509,33 @@ header{
             font-size: 18px; 
     }
     .list-content{
-        padding: 15px 10% 0 11%;
+        padding: 15px 15% 0 15%;
      }
 
     
+     .list--item{
+        height: auto;
+       /* min-height: 100vh; */
+        padding-bottom: 20px;
+        border-radius: 25px;
+        margin: 10px;
+    }
+
+
+    .listt {
+        width: 95%;
+        display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         align-content: center;
+         overflow: hidden;
+         justify-items: center;
+       
+           }
+    
+
         footer{
             height: auto;
             width: 100%;
