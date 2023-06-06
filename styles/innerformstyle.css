@@ -20,6 +20,11 @@ overflow: hidden;
 
 
 }
+.formsection h1{
+margin:50px 0 50px 0;
+
+font-weight: bold;
+}
 
 .space{
   height: 20px;
@@ -181,7 +186,22 @@ margin-bottom: 25px;
       width: 60%;
     }
    
+ ::placeholder {
+    font-size: 12px;
+    
+   }
+   select{
+ 
+   font-size: 12px;
    
+   }
+   option{
+    color: rgb(0, 0, 0);
+    background-color: #f0f0f0;
+   }
+input{
+ font-size: 12px;
+}
    
      }
  
