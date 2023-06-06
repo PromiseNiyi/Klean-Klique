@@ -154,8 +154,9 @@
 
     <div class = "center-form">
        <div class="form2">
-            <form class="contact-form2" >
-               
+            <form class="contact-form2"  onsubmit="sendEmail(); reset(); return false;"   method="POST" >
+              <!-- onsubmit="sendEmail(); reset(); return false;"      ----         action="https://formsubmit.co/44af4310cac6a5f785b4569b8c63c14b "-->
+              
                 <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
                 <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
                 <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
@@ -341,11 +342,11 @@
                 <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Busstop"/>
                 <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Day"/>
                 <h5>Preferred Cleaning Day</h5>
-                
+                <input type="hidden" name="_captcha" value="false">
                 
                 <button type="submit">Contact</button>
                
-    
+                  <!-- <input type="submit" onsubmit="gotowhatsapp()"> -->
                            
             </form>
     
@@ -685,6 +686,66 @@ function updateTotalPrice3() {
 }
 </script>
 <!-- Form Script Ended-->
+
+
+<!-- Script to send email -->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      // SecureToken: "a5daf87c-6ea5-40ed-af28-a51005e00ca8",  
+        Host : "smtp.elasticemail.com",
+        Username : "promiseniyi@gmail.com",
+        Password : "6F4031D975D4EB007466A5BA05992D478B64",
+        To : 'promiseniyi@gmail.com',
+        From : "promiseniyi@gmail.com",
+        Subject : "New Enquiry",
+        Body : "And this is the body for testing"
+}).then(
+  message => alert("Message sent Successfully")
+);
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function gotowhatsapp() {
+      
+      var name = document.getElementById("Name").value;
+      var phone = document.getElementById("Phone").value;
+      var email = document.getElementById("Email").value;
+      var service = document.getElementById("service").value;
+  
+      var url = "https://wa.me/08130033314?text=" 
+      + "Name: " + name + "%0a"
+      + "Phone: " + phone + "%0a"
+      + "Email: " + email  + "%0a"
+      + "Service: " + service; 
+  
+      window.open(url, '_blank').focus();
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html> 
