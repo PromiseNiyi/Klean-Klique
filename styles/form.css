@@ -7,7 +7,7 @@
   }
 
   .form2{
-    background-color:#0a1542;
+    background-color:#e0e0e0fd;
     display: inline-block;
     position: relative;
     
@@ -92,7 +92,8 @@
     margin-top: 0px;
     margin-bottom: 20px;
     padding-bottom: 50px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-weight:lighter ;
   } 
 
   .instruction-link2 p a{
@@ -107,9 +108,10 @@
     text-align: left;
     padding-left: 2px;
     font-size: 10px;
+    font-weight: 200;
     top:0;
     transform: translateY(-10px);
-    color: white;
+    color: rgb(9, 9, 9);
     overflow: hidden;
       }
 
