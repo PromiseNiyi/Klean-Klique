@@ -366,7 +366,7 @@ overflow: hidden;
     box-shadow: 0 0.5px 5px 1px rgba(165, 165, 165, 0.1), 0 4px 20px 0 rgba(204, 204, 204, 0.19);
     cursor: pointer;
     overflow-y: hidden;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 
 }
 
@@ -380,6 +380,7 @@ overflow: hidden;
     transform: rotate(-7deg) scale(100%) translateX(-200px);
     box-shadow: 0 0.5px 5px 1px rgba(165, 165, 165, 0.1), 0 4px 20px 0 rgba(204, 204, 204, 0.8);
     background-color: #ffffff;
+     
    
 }
 
