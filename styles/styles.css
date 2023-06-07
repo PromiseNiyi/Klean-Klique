@@ -87,14 +87,19 @@ background-color: rgb(247, 149, 149);
 }
 .nav_links{
     list-style: none;
+    overflow:hidden
 }
 .nav_links li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 20px;
+    overflow: hidden;
+    
+    
 }
 
 .nav_links li a{
 transition: all 0.3s ease 0s;
+overflow: hidden;
 
 }
 
@@ -105,6 +110,9 @@ nav{
 
 .nav_links li a:hover{
     color: #0f598a;
+    font-weight: bold;
+   
+   
 }
 .call-us-now button{
    
@@ -118,7 +126,7 @@ nav{
 }
 button{
     padding: 9px 35px;
-     background-color: #0092f5;
+     background-color:#0092f5;
      border: none;
     border-radius: 50px;
     cursor:pointer;
@@ -134,7 +142,7 @@ i{
     padding: 2px 0 0 10px;
 }
 button:hover{
-    background-color: #0093f5e2;
+    background-color:#0093f5bd;
 }
 
 section{
@@ -330,7 +338,7 @@ overflow: hidden;
     align-content: center;
     overflow: hidden;
     justify-items: center;
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
     margin-top: 50px;
     padding-left: 15%;
     padding-right: 15%;
@@ -409,6 +417,9 @@ color: #0a1542;
     padding: 15px 25px;
     text-align: center;
     background-color: #0092f5;
+}
+.Learn-more button:hover{
+    background-color: #0093f5d8;
 }
 
 
@@ -768,15 +779,16 @@ ____________________________*/
     .illustrate {
         opacity: 0; 
         position: relative;
-        bottom: -40px;
+        bottom: -100px;
         transition: all 1s ease;
+        
     }
 
     .Learn-more {
         margin-bottom: 15px;
         opacity: 0; 
         position: relative;
-        bottom: 50px;
+        bottom: -40px;
         transition: all 2s ease;
     }
     .section3flex{
@@ -809,7 +821,7 @@ ____________________________*/
 
     .show {
         opacity: 1;
-        bottom: 0;
+        bottom: 50px;
     }
     
 
@@ -824,7 +836,9 @@ ____________________________*/
     .illustrate:nth-of-type(4) .illustrate.show {
         transition-delay: 5s;
     }
-
+    .illustrate:nth-of-type(4) .illustrate.show {
+        transition-delay: 100s;
+    }
 
 
 
@@ -1021,7 +1035,7 @@ ____________________________*/
              align-content: center;
              overflow: hidden;
              justify-items: center;
-             padding: 20px;
+             padding: 50px 20px 20px 20px;
              margin-top: 50px;
              padding-left: 15%;
             
@@ -1337,7 +1351,7 @@ ____________________________*/
              align-content: center;
              overflow: hidden;
              justify-items: center;
-             padding: 20px;
+             padding: 50px 20px 20px 20px;
              margin-top: 50px;
              padding-left: 15%;
              

@@ -60,7 +60,7 @@
 
     <div class = "center-form">
        <div class="form2">
-            <form class="contact-form2" >
+            <form class="contact-form2" onsubmit="sendEmail(); reset(); return false;"   method="POST"  >
                
                 <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
                 <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
@@ -73,13 +73,18 @@
                     <option value="OfficeCleaning">Office Cleaning</option>
                     <option value="EventCleaning">Event Cleaning</option>
                     <option value="LaundryService">Laundry Service</option>
+                    <option value="CarDetailing">Car Detailing Service</option>
+                    <option value="WasteManagement">Waste Management</option>
+                    <option value="UpholsteryCleaning">Upholstery Cleaning</option>
+                    <option value="windowCleaning">Window Cleaning</option>
+                    <option value="RugCleaning">Rug, Carpet Cleaning</option>
                     
                 </select>
     
     <!-- Section for Home cleaning -->
     
                 <div id="item-form" class="hidden">
-                  <h1>Select Wears accordingly</h1>
+                  <h1>Select Service Accordingly</h1>
                   <div class="hidden-child">
     
                    
@@ -133,7 +138,7 @@
     <!-- Section for office cleaning -->
     
                 <div id="item-form2" class="hidden">
-                  <h1>Select Ofice Information</h1>
+                  <h1>Select Office Information</h1>
                   <div class="hidden-child">
     
                    
@@ -190,7 +195,7 @@
        <!-- Section for laundry -->
     
                 <div id="item-form3" class="hidden">
-                  <h1>Select Ofice Information</h1>
+                  <h1>Select Wears Accordingly</h1>
                   <div class="hidden-child">
     
                    
