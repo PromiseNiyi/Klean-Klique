@@ -207,6 +207,7 @@ section{
 
 .wrapclas{
     overflow: hidden;
+    
 }
 
 .wrapper h1{
@@ -946,14 +947,14 @@ ____________________________*/
              
             background-color: #f6f6f6;
                 
-                color :  rgb(45, 45, 45);  
-               text-align: center;     
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-               padding-bottom: 50px;
-                
+            color :  rgb(45, 45, 45);  
+            text-align: center;     
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+            
           
            }
 
@@ -1103,6 +1104,9 @@ ____________________________*/
         .navigate{
             overflow: hidden;
         }
+        .nav_links li a{
+            color:#0a1542;
+        }
 
         .section-one1{
             display: flex;
@@ -1175,7 +1179,7 @@ ____________________________*/
             width: 100%;
             position: fixed;
             inset: 0 60% 0 0;
-            background-color: #0a1542;
+            background-color: #ffffff;
             display: block;
             text-align: center;
             padding: min(30vh, 10rem) 2em;
@@ -1189,7 +1193,7 @@ ____________________________*/
 
         @supports (backdrop-filter:blur(1rem)){
             .navigate{
-                background-color:rgba(11, 35, 66, 0.663);
+                background-color:rgba(255, 255, 255, 0.663);
                 backdrop-filter: blur(1rem);
 
             }
@@ -1282,9 +1286,7 @@ ____________________________*/
             margin: 25px 0;
           
         }
-        .nav_links li a{
-            color: white;
-        }
+        
         
         .call-us-now button{
             display: inline-block;
@@ -1305,7 +1307,8 @@ ____________________________*/
 
         .stick{
             background-color: #0093f5ab;
-            height: 10vh;
+            padding: min(100%, 3rem) 2em;
+            /* height: 10vh; */
             width: 100%;
             backdrop-filter: blur(5px);
             overflow-y: hidden;
@@ -1322,23 +1325,32 @@ ____________________________*/
 
 
         .illustrate{
-            padding: 50px 50px 30px 50px;
+            padding: 30px 30px 30px 30px;
             background-color:  rgb(255, 255, 255);
-            height: 45vh;
-           width: 30vh;
+            min-height: 45vh;
+            height: auto;
+            min-width: 30vh;
+            width: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
             border-radius: 25px;
-            font-size: 14px;
             color: rgb(41, 41, 41);
             box-shadow: 0 0.5px 5px 1px rgba(165, 165, 165, 0.1), 0 4px 20px 0 rgba(204, 204, 204, 0.19);
             cursor: pointer;
-            overflow-y: hidden;
+           font-size: 12px;
+            overflow: hidden;
             
         }
+
+        .illustrate p{
+            line-height: 20px;
+        }
+
+
+
 
         .pictures{
             width: 100%;
@@ -1467,12 +1479,21 @@ header{
     
     }
 
+    .section-one1{
+        min-height: 100vh;
+        height: auto;
+    }
+
 .section-one{
-    padding: 0 25px;
+    padding: 100px 25px 25px 25px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
+  
 }
+
+
 .section-one img{
     max-width: 45%;
 }
@@ -1521,8 +1542,9 @@ header{
         
         }
         .section-three{
-        height: 60vh;
-        padding-top: 0;
+            min-height: 60vh;
+        height: auto;
+        padding-top: 10px;
         }
 
         .section-four{
@@ -1607,7 +1629,7 @@ header{
 
 .section-three{
     height: auto;
-    padding-top:10px;
+    padding-top:100px;
     padding-bottom: 20px;
 }
 
