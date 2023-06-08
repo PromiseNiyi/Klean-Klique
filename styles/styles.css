@@ -559,43 +559,134 @@ color :  rgb(45, 45, 45);
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
+background-color: #f5fbff31;
 text-align: center;
 padding-top:90px;
 overflow: hidden;
 transition: all 0.5s ease;
+height: auto;
 
 }
-.Abou-flex{
+
+.About-page p{
+    font-weight: 100;
+    text-align:justify;
+    font-size: 17px;
+    
+    
+}
+.About-flex{
     margin-bottom: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+   padding: 0;
 
 }
-.About-explore{
-    margin-top: 0;
+
+
+
+.Description, .details{
+   align-items: left;
+   text-align: left;
+   overflow: hidden;
+   padding: 20px 0 0 0;
    
+   
+}
+.Description{
+    background-color: rgb(174, 224, 255);
+    padding: 20px;
+}
+
+.details h4, .Description h2{
+margin-bottom: 20px;
+font-size: 20px;
+}
+.details h4{
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.writ{
+    padding: 0 10px  ;
+  text-align: center;
+    font-weight: 100;
+    
 }
 
 
 .About-page h1{
     text-transform: capitalize;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
-.about-writeup{
-    font-size: 60px;
-    padding: 20px 30px;
-    cursor: pointer;
-   text-align: center;
-    transition: all 0.5s ease-in-out;
-    font-weight: medium;
+.detail-one,.detail-two{
+    padding: 40px 20px;
 }
-.about-writeup:hover{
-    color: rgb(15, 119, 255, 1);
-    font-size: 58px;
+.detail-one{
+    background-color: rgb(255, 243, 208);
+}
+.detail-two{
+    background-color: rgb(255, 239, 239);
+}
+.OurClient{
+    height: 20vh;
+    padding: 50px 20px  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}  
+
+.clientlogo{
+    display: flex;
+    justify-content: space-between;
+}
+.client1{
+    margin: 0 50px;
+}
+.client1 img{
+    aspect-ratio: 1;
+    width: 70px;
+    filter: grayscale(100%);
 }
 
+.client1 img:hover{
+    filter: grayscale(0%);
+}
+
+.ServiceCounter{
+    overflow: hidden;
+display: flex;
+justify-content: space-around;
+padding:30px 25px ;
+background-color: #0a1542;
+width: 100%;
+align-items: center;
+color: white;
+}
+
+.ServiceCounter img{
+    aspect-ratio: 1;
+    width: 30px;
+}
+
+.countflex{
+    display: flex;
+    justify-content: center;
+}
+
+.Events p, .Office p, .Client p {
+    text-align: center;
+    font-size: 65px;
+}
 
 /*_______________________________________________________________*/
 /* Service Page*/
@@ -1590,6 +1681,15 @@ header{
             height: auto;
         }
 
+
+.Description{
+    text-align: center;
+}
+.OurClient{
+    min-height: 30vh;
+    height: auto;
+}
+
 }
 
 @media (max-width:50em){
@@ -1718,6 +1818,47 @@ header{
             overflow: hidden;
             }
 
+            .Description{
+            text-align: center;
+             width:40vh ;
+              min-height: 20vh;
+              height: auto;
+            }
+            .details{
+                text-align: center;
+                width:40vh ;
+                 min-height: 20vh;
+                 height: auto;
+            }
+
+            .OurClient{
+                min-height: 30vh;
+                height: auto;
+            }
+
+            .clientlogo{
+                flex-direction: column;
+                            
+            }
+            .client1{
+                margin: 30px;
+            }
             
+            .ServiceCounter{
+                overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding:30px 25px ;
+            background-color: #0a1542;
+            width: 100%;
+            height: 80vh;
+            align-items: center;
+            color: white;
+            margin: 0;
+            } 
+            .About-flex{
+                width: 100%;
+            }
 
     }

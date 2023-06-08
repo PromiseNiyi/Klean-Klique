@@ -54,18 +54,87 @@
 <!--____________________________________________________________________________-->
 
 <section class="About-page">
-    <div class="Abou-flex">
-        <h1>About Us</h1>
-        <p class="about-writeup">Lobortis mattis odio leo eget mauris met aliquet semper molestie 
-            sollicitudin congue massa mauris lectus vitae cras viverra gravida sapien.
+    <h1>About Us</h1>
+    <div class="About-flex">
+      <div class="Description">
+        <h2>Who We Are</h2>
+        <p>
+            At KleanKlique, We are dedicated to providing exceptional cleaning services
+             to meet the unique needs of our clients. With our team of skilled and experienced 
+             professionals, we offer a wide range of cleaning solutions for residential, commercial, 
+             and industrial spaces. 
+        </p>
+      </div>  
+      <div class="details">
+        <div class="writ">
+            <h4>About Our Comprehensive Cleaning Services </h4>
+        </div>
+      
+        <div class="detail-one">
+            <p>
+                Our comprehensive cleaning service offers a complete solution for
+                 your residential and commercial cleaning needs. With attention to detail, skilled professionals, and a wide range of services,
+                 we ensure a spotless and hygienic environment for your space
+            </p>
+        </div>
+        <div class="detail-two">
+            <p>
+                Discover our comprehensive cleaning service that goes beyond
+                 the ordinary. From event cleaning to meticulous car detailing,
+                  we offer specialized services to meet all your cleaning needs, 
+                ensuring every aspect of your space shines with perfection.
+                </p>
         
-          </p>
-                            
+      </div>
+    </div>
+    <div class="OurClient">
+    <h4>Our Clients</h4>
+   <div class="clientlogo">
+    <div class="client1">
+        <img src="icons/mountainlogo.png" alt="client logo">
+    </div>
+    <div class="client1">
+        <img src="icons/officelogo.png" alt="client logo">
+    </div>
+    <div class="client1">
+        <img src="icons/treelogo.png" alt="client logo">
+    </div>
+    <div class="client1">
+        <img src="icons/wolflogo.png" alt="client logo">
+    </div>
+   </div>
+    </div>
+
+    <div class="ServiceCounter">
+        <div class="Client">
+            <img src="icons/user1.png" alt="client icon">
+            <h5>Our Satisfied Client</h5>
+            <div class="countflex">
+                <p class="counting-number" data-count="250">0</p> <p>+</p>
+            </div>
+       </div>
+       <div class="Office">
+        <img src="icons/office.png" alt="office icon">
+        <h5>Offices Cleaned</h5>
+        <div class="countflex">
+            <p class="counting-number" data-count="150">0</p> <p>+</p>
         </div>
-        <div class="bookbutton"> 
-            <a class="Explore " href="Contact.html">  <button class="book-appointment About-explore">Book an Appointment </button></a>
-        </div>
+   </div>
+   <div class="Events">
+   
+    <img src="icons/event1.png" alt="event Icon">
+    <h5>Event Centers Cleaned</h5>
+    <div class="countflex">
+        <p class="counting-number" data-count="50">0</p> <p>+</p>
+    </div>
+   
+</div>
+
+    </div>
+    
+        
 </section>
+
 
 <!--_______________________________________________________________________________-->
 
@@ -98,6 +167,93 @@
 
 	})
 </script>
+
+
+<!-- Counting Animation -->
+
+<script>
+    function animateValue(element, start, end, duration) {
+  let current = start;
+  const range = end - start;
+  const increment = end > start ? 1 : -1;
+  const stepTime = Math.abs(Math.floor(duration / range));
+  const timer = setInterval(() => {
+    current += increment;
+    element.textContent = current;
+    if (current === end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
+
+const numbers = document.getElementsByClassName("counting-number");
+for (let i = 0; i < numbers.length; i++) {
+  const element = numbers[i];
+  const count = parseInt(element.getAttribute("data-count"), 10);
+  animateValue(element, 0, count, 2000);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+var countingNumber = document.getElementById('counting-number');
+var targetNumber = 100; // Change this to your desired target number
+var duration = 3000; // Change this to adjust the duration of the counting animation (in milliseconds)
+var interval = 10; // Change this to adjust the interval between each increment (in milliseconds)
+
+var currentNumber = 0;
+var increment = Math.ceil(targetNumber / (duration / interval));
+
+function countToTarget() {
+  if (currentNumber < targetNumber) {
+    currentNumber += increment;
+    if (currentNumber > targetNumber) {
+      currentNumber = targetNumber;
+    }
+    countingNumber.textContent = currentNumber;
+    setTimeout(countToTarget, interval);
+  }
+}
+
+countToTarget();
+</script>
+<script>
+    var countingNumber = document.getElementById('counting-number');
+    var targetNumber = 100; // Change this to your desired target number
+    var duration = 3000; // Change this to adjust the duration of the counting animation (in milliseconds)
+    var interval = 10; // Change this to adjust the interval between each increment (in milliseconds)
+    
+    var currentNumber = 0;
+    var increment = Math.ceil(targetNumber / (duration / interval));
+    
+    function countToTarget() {
+      if (currentNumber < targetNumber) {
+        currentNumber += increment;
+        if (currentNumber > targetNumber) {
+          currentNumber = targetNumber;
+        }
+        countingNumber.textContent = currentNumber;
+        setTimeout(countToTarget, interval);
+      }
+    }
+    
+    countToTarget();
+    </script>
+     -->
 
 
 </body>
