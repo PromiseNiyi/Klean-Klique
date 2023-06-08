@@ -524,7 +524,8 @@ color: #0a1542;
 /*_______________________________________________________________*/
 /* Footer*/
 footer{
-height: 15vh;
+min-height: 15vh;
+height: auto;
 width: 100%;
 background-color: #ededed;
 display: flex;
@@ -561,7 +562,7 @@ flex-direction: column;
 align-items: center;
 background-color: #f5fbff31;
 text-align: center;
-padding-top:90px;
+padding-top:5%;
 overflow: hidden;
 transition: all 0.5s ease;
 height: auto;
@@ -638,7 +639,8 @@ font-size: 20px;
     background-color: rgb(255, 239, 239);
 }
 .OurClient{
-    height: 20vh;
+    min-height: 20vh;
+    height: auto;
     padding: 50px 20px  ;
     display: flex;
     flex-direction: column;
@@ -671,6 +673,8 @@ background-color: #0a1542;
 width: 100%;
 align-items: center;
 color: white;
+min-height: 25vh;
+height: auto;
 }
 
 .ServiceCounter img{
@@ -687,12 +691,22 @@ color: white;
     text-align: center;
     font-size: 65px;
 }
+.Testimonial{
+    padding: 20px;
+    min-height: 50vh;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
 
 /*_______________________________________________________________*/
 /* Service Page*/
-/*__________________________
-
-____________________________*/
 
 
 
@@ -1055,7 +1069,10 @@ ____________________________*/
             padding-top:5px;
         }
 
-  
+        .About-page{
+            padding-top: 10%;
+        }
+    
 
     }
 
@@ -1232,12 +1249,12 @@ ____________________________*/
         font-size: 20px;
     }
 
-.newservice{
-    padding-top: 15%;
-    height: auto;
-    min-height: 30%;
-    font-size: 10px;
-}
+        .newservice{
+        padding-top: 15%;
+        height: auto;
+        min-height: 30%;
+        font-size: 10px;
+        }
 
         .section-one h1{
             font-size: 50px;
@@ -1503,9 +1520,12 @@ ____________________________*/
              overflow: hidden;
              justify-items: center;
              
-           
-               }
-        
+            }
+
+            .About-page{
+                padding-top: 15%;
+            }
+       
     }
 
 
@@ -1689,6 +1709,18 @@ header{
     min-height: 30vh;
     height: auto;
 }
+.About-page{
+    padding-top: 10%;
+}
+
+.About-page h1{
+    font-size: 25px;
+}
+
+.Events p, .Office p, .Client p {
+    text-align: center;
+    font-size: 40px;
+}
 
 }
 
@@ -1733,44 +1765,36 @@ header{
     padding-bottom: 20px;
 }
 
-        .service-img{
-            margin: 10%;
-            width: 100%;
-            height: 20vh;
-            overflow: hidden;
-            border-radius: 10px;
-            
-           }
-       
-           .service-flexx{
-            display: block;
-            margin-right: 30%;
-        }
-
-            .contact-section{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                padding: 0 10%;
-                overflow: hidden;
-            }
-
-            .instruction-link p{
-                padding: 20%;
-                text-align: center;
-            
-            }
-            .About-page h1{
-                font-size: 30px;
-            }
-        .about-writeup{
-            font-size: 20px;
-        }
-        .about-writeup:hover{
-            font-size: 18px; 
+.service-img{
+    margin: 10%;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    border-radius: 10px;
+    
     }
+
+    .service-flexx{
+    display: block;
+    margin-right: 30%;
+}
+
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10%;
+        overflow: hidden;
+    }
+
+    .instruction-link p{
+        padding: 20%;
+        text-align: center;
+    
+    }
+          
 
     .newservice{
         padding-top: 20%;
@@ -1820,15 +1844,20 @@ header{
 
             .Description{
             text-align: center;
-             width:40vh ;
+             min-width:40vh ;
+             width: auto;
               min-height: 20vh;
               height: auto;
             }
             .details{
                 text-align: center;
-                width:40vh ;
+                min-width:40vh ;
+                width: auto;
                  min-height: 20vh;
                  height: auto;
+            }
+            .Description p, .details p{
+                font-size: 14px;
             }
 
             .OurClient{
@@ -1859,6 +1888,10 @@ header{
             } 
             .About-flex{
                 width: 100%;
+            }
+
+            .About-page{
+                padding-top: 20%;
             }
 
     }
