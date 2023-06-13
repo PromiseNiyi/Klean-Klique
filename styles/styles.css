@@ -524,15 +524,18 @@ color: #0a1542;
 /*_______________________________________________________________*/
 /* Footer*/
 footer{
-min-height: 30vh;
-height: auto;
+
+height: 30vh;
 width: 100%;
 background-color: #ededed;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
-padding: 10% 20% 5% 20% ;
+justify-content: center;
+overflow: hidden;
+padding: 25px 25px 10px 25px ;
+row-gap: 40px;
+
     
 }
 
@@ -544,24 +547,25 @@ font-weight: 500;
 }
 .footflex{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    margin-bottom: 50px;
+   
+    width: 100%;
+    overflow: hidden;
+    padding: 0 20px;
+    column-gap: 30%;
+    
 
 }
-.footmenu{
-    display: flex;
-    
-}
-.footcontact{
-    padding-right: 100px;
-}
+
+
 
 .footcontact{
 margin-bottom: 20px;
 }
 .footcontact p{
     margin-bottom: 10px;
+    font-size: 13px;
    }
     
 .footspan{
@@ -575,15 +579,13 @@ font-weight: bold;
 }
 
 .foot img{
-    aspect-ratio: 1;
-    width: 30%;
-}
-footer li{
-padding: 5px 0;
+    /* aspect-ratio: 1; */
+    width: 200px;
 }
 
+
 .footwrite{
-   margin-top: 20%;
+  padding-top: 20px;
    font-size: 12px;
    color: rgba(0, 0, 0, 0.437);
 }
@@ -714,7 +716,10 @@ color: white;
 min-height: 25vh;
 height: auto;
 }
+.ServiceCounter h5{
+font-weight: 300;
 
+}
 .ServiceCounter img{
     aspect-ratio: 1;
     width: 30px;
@@ -1241,7 +1246,7 @@ height: auto;
         .logo{
             cursor: pointer;
             background: none;
-            width: 20%;
+            width: 250px;
            
         }
         .navigate{
@@ -1325,7 +1330,7 @@ height: auto;
             background-color: #ffffff;
             display: block;
             text-align: center;
-            padding: min(30vh, 10rem) 2em;
+            padding: min(30vh, 6rem) 2em;
             transition: all 0.5s ease;
             transform: translateX(-100%);
             z-index: 5000;
@@ -1571,7 +1576,7 @@ height: auto;
         .logo{
             cursor: pointer;
             background: none;
-            width: 50%;
+            width: 200px;
            
         }
    
@@ -1716,15 +1721,7 @@ header{
         padding: 20%;
         text-align: center;
     
-    }
-    
-
-
-    
-   
-
-
-        
+    }      
 
 
         .form2{
@@ -1751,6 +1748,36 @@ header{
     text-align: center;
     font-size: 40px;
 }
+footer{
+     min-height: 30vh;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 50px;
+
+}
+
+
+.footflex{
+  
+    flex-direction: column;
+    row-gap: 20px;
+    overflow: hidden;
+  
+}
+
+.footcontact{
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* .footwrite{
+    padding-top: 5px;
+     font-size: 12px;
+     color: rgba(0, 0, 0, 0.437);
+  } */
+
 
 }
 
@@ -1759,7 +1786,7 @@ header{
     .logo{
         cursor: pointer;
         background: none;
-        width: 60%;
+        width: 200px;
        
     }
     .stick{
