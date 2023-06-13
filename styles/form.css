@@ -44,7 +44,7 @@
     font-family: "montserrat", poppins, sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background-color: #4CAF50;
+    background-color: #0092f5;
     width: 50%;
     border: 0;
     padding: 15px;
@@ -60,7 +60,7 @@
   }
 
   .form2 button:hover{
-    background-color: #4caf4fcc;
+    background-color:#0093f5bd;
     transform: translateY(-2px);
   }
 
@@ -98,7 +98,7 @@
 
   .instruction-link2 p a{
     text-decoration: none;
-    color:#0092f5;
+    color: #4CAF50;
   }
 
 
