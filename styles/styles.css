@@ -581,6 +581,7 @@ font-weight: bold;
 .foot img{
     /* aspect-ratio: 1; */
     width: 200px;
+    cursor: default;
 }
 
 
@@ -602,7 +603,7 @@ flex-direction: column;
 align-items: center;
 background-color: #f5fbff31;
 text-align: center;
-padding-top:5%;
+padding-top:200px;
 overflow: hidden;
 transition: all 0.5s ease;
 height: auto;
@@ -664,8 +665,8 @@ font-size: 20px;
 .About-page h1{
     text-transform: capitalize;
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 50px;
+    font-size: 50px;
+    margin-bottom: 100px;
     overflow: hidden;
 }
 
@@ -758,7 +759,7 @@ font-weight: 300;
     
     color :  rgb(45, 45, 45);  
    text-align: center;
-    padding-top:5%;
+    padding-top:200px;
    height: auto;
    display: flex;
    flex-direction: column;
@@ -769,7 +770,7 @@ font-weight: 300;
 }
 
 .newservice h1{
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     font-size: 50px;
    
 }  
@@ -887,7 +888,7 @@ font-weight: 300;
   
 
     .contact-page-main h1{
-        margin-bottom: 5px;
+        margin-bottom: 50px;
         font-size: 50px;
         transition: all 0.8s ease;
            
@@ -903,8 +904,8 @@ font-weight: 300;
     }
     
     .contact-page-main{
-        padding-top: 5%;
-        height: 20vh;
+        padding-top: 200px;
+        height: auto;
        display: flex;
        flex-direction: column;
        justify-content: center;
@@ -1091,8 +1092,7 @@ font-weight: 300;
     
            .newservice{
             height: auto;
-            padding-top: 10%;
-             
+                     
             background-color: #f6f6f6;
                 
             color :  rgb(45, 45, 45);  
@@ -1112,9 +1112,7 @@ font-weight: 300;
             padding-top:5px;
         }
 
-        .About-page{
-            padding-top: 10%;
-        }
+       
     
 
     }
@@ -1153,9 +1151,7 @@ font-weight: 300;
             font-size: 60px;
         }
 
-        .contact-page-main{
-            height: 20vh;
-           }
+      
 
         .illustrate{
             padding: 50px 50px 30px 50px;
@@ -1278,7 +1274,7 @@ font-weight: 300;
         transform: translateY(-20px);
     } */
     .contact-page-main{
-        padding-top: 20%;
+        padding-top: 150px;
         height: auto;
         min-height: 30%;
         font-size: 10px;
@@ -1286,11 +1282,11 @@ font-weight: 300;
     }    
 
     .contact-page-main h1, .newservice h1{
-        font-size: 20px;
+        font-size: 30px;
     }
 
         .newservice{
-        padding-top: 15%;
+        padding-top: 150px;
         height: auto;
         min-height: 30%;
         font-size: 10px;
@@ -1563,7 +1559,7 @@ font-weight: 300;
             }
 
             .About-page{
-                padding-top: 15%;
+                padding-top:150px ;
             }
        
     }
@@ -1736,12 +1732,10 @@ header{
     min-height: 30vh;
     height: auto;
 }
-.About-page{
-    padding-top: 10%;
-}
+
 
 .About-page h1{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .Events p, .Office p, .Client p {
@@ -1860,9 +1854,7 @@ footer{
     }
           
 
-    .newservice{
-        padding-top: 20%;
-    }
+   
     
     .list-content{
         padding: 15px 25px 0 25px;
@@ -1944,8 +1936,6 @@ footer{
                 width: 100%;
             }
 
-            .About-page{
-                padding-top: 20%;
-            }
+          
 
     }
