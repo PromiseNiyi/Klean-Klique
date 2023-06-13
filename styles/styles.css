@@ -185,7 +185,7 @@ section{
 }
 
 .section-one img{
-    aspect-ratio: 1;
+   transform: translateY(-30px);
     max-width:50% ;
     margin-top: 10%;
     overflow: hidden;
@@ -624,38 +624,47 @@ height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+  row-gap: 80px;
    padding: 0;
 
 }
 
 
 
-.Description, .details{
+.details{
    align-items: left;
    text-align: left;
    overflow: hidden;
-   padding: 20px 0 0 0;
-   
+   width: 100%; 
    
 }
-.Description{
+#escription{
     background-color: rgb(174, 224, 255);
-    padding: 20px;
+
 }
 
-.details h4, .Description h2{
-margin-bottom: 20px;
-font-size: 20px;
+
+.detail-one{
+    background-color: rgb(255, 243, 208);
+    height: 200px;
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
 .details h4{
+    margin-bottom: 20px;
+    font-size: 20px;
     font-weight: 600;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 .writ{
-    padding: 0 10px  ;
+    padding: 10px  ;
   text-align: center;
     font-weight: 100;
     
@@ -670,15 +679,14 @@ font-size: 20px;
     overflow: hidden;
 }
 
-.detail-one,.detail-two{
-    padding: 40px 20px;
+.detail-one p,.Description p{
+text-align: center;
+font-size: 14px;
+padding: 20px 20%;
 }
-.detail-one{
-    background-color: rgb(255, 243, 208);
-}
-.detail-two{
-    background-color: rgb(255, 239, 239);
-}
+
+
+
 .OurClient{
     min-height: 20vh;
     height: auto;
@@ -1268,6 +1276,7 @@ font-weight: 300;
         .section-one img{ 
             margin-top:0;
             max-width:50% ;
+            transform: translateY(0);
         }   
 
     /* .bookbutton{
@@ -1898,13 +1907,15 @@ footer{
             .details{
                 text-align: center;
                 min-width:40vh ;
-                width: auto;
-                 min-height: 20vh;
-                 height: auto;
+                width: 100%;
+                
             }
-            .Description p, .details p{
+            .detail-one p{
+                text-align: center;
                 font-size: 14px;
-            }
+                padding: 20px 25px;
+                }
+          
 
             .OurClient{
                 min-height: 30vh;
