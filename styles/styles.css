@@ -5,10 +5,11 @@
     margin: 0;
     padding: 0;
     font-family:"montserrat", poppins, sans-serif;
-    overflow-x: hidden;
     height: auto;
+   /* overflow-x: hidden; */
     
 }
+
 body{
    
     overflow-x:hidden ;
@@ -301,6 +302,8 @@ padding: 10px 0;
 
 
 .section-two{
+min-height: 100vh;
+align-items: center;
 height: auto;
 padding-top:30px;
 padding-bottom: 30px;
@@ -476,6 +479,7 @@ color: #0a1542;
 .section3flex{
     overflow: hidden;
     margin-bottom: 25px;
+    z-index: 1999;
    
     
 }
@@ -950,10 +954,10 @@ font-weight: 300;
         bottom: -40px;
         transition: all 2s ease;
     }
-    .section3flex{
+    /* .section3flex{
         opacity: 0; 
         position: relative;
-        bottom: -70px;
+        bottom: 30px;
         transition: all 1s ease;
     }
     .Explore2{
@@ -962,7 +966,7 @@ font-weight: 300;
         bottom: -40px;
         transition: all 1s ease;
         overflow: hidden;
-    }
+    }  */
     .instruction-link{
         opacity: 0; 
         position: relative;
@@ -984,7 +988,7 @@ font-weight: 300;
     }
     
 
-    .illustrate:nth-of-type(2) .illustrate.show {
+    /* .illustrate:nth-of-type(2) .illustrate.show {
         transition-delay: 0.5s;
     }
     
@@ -997,7 +1001,7 @@ font-weight: 300;
     }
     .illustrate:nth-of-type(4) .illustrate.show {
         transition-delay: 100s;
-    }
+    } */
 
 
 
@@ -1362,13 +1366,14 @@ font-weight: 300;
             overflow: hidden;
             display: flex;
             justify-content: center;
+            align-items: center;
             position: absolute;
             /* background-image: url(/icons/menu.png); */
             background-color: rgba(255, 255, 255, 0.682);
             border: none;
             aspect-ratio: 1;
             border-radius: 8px;
-            padding: 0;
+            padding:  0;
             width:2rem;
             top: 2rem;
             left: 5rem;
@@ -1383,7 +1388,8 @@ font-weight: 300;
 
         .nav-toggle img{
             aspect-ratio: 1;
-            width: 40px;
+            width: 35px;
+           
         }
 
         /* .nav-toggle[aria-expanded="true"]{

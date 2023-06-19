@@ -10,11 +10,13 @@
     <link rel="stylesheet" type="text/css" href="styles/innerformstyle.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/cardstyle.css">
     
     <script src="scripts/newtop.js"></script>
     <script type="text/javascript" src="scripts/nav.js" defer></script>
     <script type="text/javascript" src="scripts/topscript.js"></script>
     <script src="scripts/animate.js"></script>
+    <!-- <script type="text/javascript" src="scripts/cardscript.js"></script> -->
     
     <script src="https://kit.fontawesome.com/a1708c9e84.js" crossorigin="anonymous"></script>
     <link rel = "icon" href = "icons/Kleanklique_logo_symbol_light_blue-01.png" type = "image/x-icon">
@@ -86,7 +88,10 @@
 
 <!--_______________________________________________________________________________-->
 
-<Section class="section-two" >
+
+<!-- <Section class="section-two" >
+
+  
    
     <h1>Services</h1>
        
@@ -161,8 +166,119 @@
         
         <a class="Learn-more" href="Service.html">  <button>Learn More </button></a>
        
-</Section>
+</Section> -->
 
+<section class="body">
+
+
+
+
+<div class="cardsection">
+	<div class="wrapperx">
+			<i class="fa-solid fa-arrow-right fa-flip-horizontal" id="left"></i>
+			<!-- <img width="50" height="50" src="https://img.icons8.com/ios/50/back--v1.png" class="arrowicon" alt="back--v1"/> -->
+			<ul class="carousel" >
+					<li class="cards">
+						<img src="icons/laundry-01.png" alt="card-icon">
+						<div class="cardcontent">
+							 <h3>Laundry Cleaning</h3>
+			                  <p>Experience hassle-free laundry with our professional service. We'll take care of your clothes,so you can enjoy fresh and clean garments every time. 
+			                  </p>
+						</div>
+					</li>
+
+					<li class="cards">						
+						<img src="icons/House Cleaning-01.png" alt="card-icon">
+						
+						<div class="cardcontent">
+							 <h3>House Cleaning</h3>
+                   			<p>Experience a sparkling clean home with our professional House Cleaning service.Our skilled team ensures a thorough and efficient cleaning, 
+                     		leaving your space refreshed and spotless. </p>
+						</div>
+					</li>
+
+					<li class="cards">
+						<img src="icons/upholstery-01.png" alt="card-icon" draggable="false">
+						<div class="cardcontent">
+							 <h3>Upholstery cleaning</h3>
+			                   <p>Revitalize your furniture with our professional upholstery cleaning service. Say goodbye to stains and dirt, 
+			                    and enjoy fresh and rejuvenated upholstery that looks as good as new. </p>
+			                  </p>
+						</div>
+					</li>
+							
+					<li class="cards">
+						<img src="icons/window cleaning-01.png" alt="card-icon" draggable="false">
+						<div class="cardcontent">
+							 <h3>Window Cleaning</h3>
+			                   <p>Enhance the beauty of your space with crystal-clear windows. 
+			                    Our professional Window Cleaning service delivers streak-free results, 
+			                    leaving your view sparkling and pristine. </p>
+						</div>
+					</li>
+
+					<li class="cards">
+						<img src="icons/rug-carpet cleaning-01.png" alt="card-icon" class="arrowicon" draggable="false">
+						<div class="cardcontent">
+							  <h3>Rug Cleaning</h3>
+			                   <p>Restore the beauty of your rugs and carpets with our professional cleaning service.
+			                     We provide deep cleaning solutions that remove stains and revitalize your floors, leaving them fresh and immaculate. </p>
+						</div>
+					</li>
+
+					<li class="cards">
+						<img src="icons/event cleaning-01.png" alt="card-icon" draggable="false">
+						<div class="cardcontent">
+							<h3>Event Cleaning</h3>
+		                   <p>Leave the mess behind, we'll make it pristine. 
+		                    Experience event cleaning excellence that's truly pristine with Klean Klique. </p>
+						</div>
+					</li>
+
+					<li class="cards">
+						<img src="icons/disinfection-01.png" alt="card-icon" draggable="false">
+						<div class="cardcontent">
+							 <h3>Sanitation cleaning</h3>
+			                  <p> Our Disinfection and Sanitation Cleaning Service
+			                   ensures a germ-free environment that radiates safety and tranquility.
+			               		</p>
+						</div>
+					</li>
+
+					<li class="cards">
+						<img src="icons/event cleaning-01.png" alt="card-icon" draggable="false">
+						<div class="cardcontent">
+							  <h3>Pest control cleaning</h3>
+                   			<p>Say goodbye to pests and hello to a clean haven! Our expert pest control cleaning service ensures a 
+                    		bug-free environment that sparkles with freshness. </p>
+						</div>
+					</li>
+
+					<li class="cards">
+					<img src="icons/event cleaning-01.png" alt="card-icon" draggable="false"> 
+						<div class="cardcontent">
+							 <h3>Waste Management</h3>
+                   <p>We provide extensive waste management services 
+                    that includes garbage collection and disposal.</p>
+						</div>
+					</li>
+
+					<li class="cards">
+						<img src="icons/event cleaning-01.png" alt="card-icon" draggable="false">
+						<div class="cardcontent">
+							 <h3>Car Detailing Service</h3>
+                   			<p>At klean klique we give professional art and craft of thorough 
+                    		but safe cleaning and we restore your vehicle to a like new condition. </p> 
+			                  </p>
+						</div>
+					</li>
+			</ul>
+			<i class="fa-solid fa-arrow-right" id="right"></i>
+			<!-- <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/forward.png" class="arrowicon" alt="forward"/> -->
+</div>
+</div>
+
+</section>
 <!--_______________________________________________________________________________-->
 
 <!-- <Section class="line">
@@ -457,12 +573,12 @@
 
 <!-- Appear on scroll -->
 
-<script>
+ <script>
     window.addEventListener('DOMContentLoaded', setup); 
 
 function setup() {
     const options = {
-        rootMargin: '0px 0px -200px 0px'
+        rootMargin: '0px 0px 0px -200px'
     }
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -773,7 +889,7 @@ function updateTotalPrice3() {
 
 
 
-
+<!-- Whatsapp script -->
 
 
 
@@ -797,11 +913,87 @@ function updateTotalPrice3() {
   }
   </script>
 
+<!-- Card section for our services -->
 
 
 
 
+<script>
 
+const carousel = document.querySelector(".carousel");
+const arrowBtns = document.querySelectorAll(".wrapperx i");
+const firstCardWidth = carousel.querySelector(".cards").offsetWidth;
+const carouselChildren = [...carousel.children];
+
+let isDragging = false, startX, startScrollLeft;
+
+// get the number of cards that can fit in the carousel at once
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth)
+
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildren.slice(-cardPerView).reverse().forEach(card =>{
+	carousel.insertAdjacentHTML("afterBegin", card.outerHTML);
+});
+
+//Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildren.slice(0, cardPerView).forEach(card =>{
+	carousel.insertAdjacentHTML("beforeEnd", card.outerHTML);
+});
+
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+	btn.addEventListener("click", () => {
+		console.log(btn.id);
+		carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+	});
+});
+
+const dragStart = (e) => {
+	isDragging = true;
+	carousel.classList.add("dragging");
+	// records the initial cursor and scroll position of the carousel
+	startX = e.pageX;
+	startScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+	// if isDragging is false return from here
+	if(!isDragging) return; 
+	// updates the scroll position of the carousel based on the cursor position
+	carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop = () => {
+	isDragging = false;
+	carousel.classList.remove("dragging");
+}
+const infiniteScroll = () => {
+	// if the carousel is at the beginning, scroll to the end
+	if(carousel.scrollLeft === 0){
+		carousel.classList.add("no-transition");
+		carousel.scrollLeft = carousel.scrollWidth -( 2 * carousel.offsetWidth);
+		// console.log("You reached the left end");
+		carousel.classList.remove("no-transition");
+	} 
+	// if the carousel is at the end, scroll to the beginning
+	else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth -carousel.offsetWidth){
+		carousel.classList.add("no-transition");
+		carousel.scrollLeft = carousel.offsetWidth;
+		// console.log("You reached the right end");
+		carousel.classList.remove("no-transition");
+	}
+
+}
+
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+
+
+
+</script>
 
 
 
