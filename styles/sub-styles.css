@@ -32,6 +32,13 @@
  line-height: 20px;
 }
 
+@supports (line-height: 20px){
+  .sub-info p{
+line-height: 50px;
+color: green;
+  }
+}
+
 .form-control{
 	height: 300px;
 	width: 300px;
