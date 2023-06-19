@@ -26,7 +26,10 @@
 	padding: 20px 50px;
 }
 .sub-info p{
-	font-size: 14px;
+	font-size: 12px;
+  font-weight: 500;
+ color: grey;
+ line-height: 20px;
 }
 
 .form-control{

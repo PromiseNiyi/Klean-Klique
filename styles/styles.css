@@ -440,8 +440,9 @@ color: #0a1542;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
-    height: 10vh;
+
+    background-color:#0a1542 ;
+    height: 2vh;
     width: 100%;
 }
 
