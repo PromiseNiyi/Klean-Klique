@@ -5,9 +5,11 @@
 	
 }
 .body{
-	min-height: 100vh;
+	min-height: auto;
 	align-items: center;
 	width: 100%;
+	height: auto;
+	
 
 } 
 
@@ -19,7 +21,8 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	padding: 0 35px;
+	height: auto;
+	padding: 20px 35px;
 	background: linear-gradient( to left top, darkblue, skyblue) ;
 }
 .wrapperx{
@@ -104,7 +107,7 @@ padding-bottom:2pxx ; */
 
 .carousel .cards{
 	scroll-snap-align: start;
-	height: 500px ;
+	height: 450px ;
 	list-style: none;
 	background-color:white ;
 	border-radius: 8px;
