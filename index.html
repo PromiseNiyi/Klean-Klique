@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/cardstyle.css">
+    <link rel="stylesheet" href="styles/sub-styles.css">
+
     
     <script src="scripts/newtop.js"></script>
     <script type="text/javascript" src="scripts/nav.js" defer></script>
@@ -340,7 +342,9 @@
                 </select>
     
     <!-- Section for Home cleaning -->
-    
+    <!-- 
+
+
                 <div id="item-form" class="hidden">
                   <h1>Select Service Accordingly</h1>
                   <div class="hidden-child">
@@ -392,9 +396,9 @@
                   </div>
                   <div class="space"></div>
                 </div>
-    
+         -->
     <!-- Section for office cleaning -->
-    
+    <!-- 
                 <div id="item-form2" class="hidden">
                   <h1>Select Office Information</h1>
                   <div class="hidden-child">
@@ -448,10 +452,10 @@
                 </div>
     
     
-    
+     -->
     
        <!-- Section for laundry -->
-    
+    <!-- 
                 <div id="item-form3" class="hidden">
                   <h1>Select Wears Accordingly</h1>
                   <div class="hidden-child">
@@ -512,10 +516,53 @@
                 <h5>Preferred Cleaning Day</h5>
                 <input type="hidden" name="_captcha" value="false">
                 
-                <button type="submit">Contact</button>
-               
+                
+                -->
                   <!-- <input type="submit" onsubmit="gotowhatsapp()"> -->
-                           
+            
+
+
+
+
+                  <div id="sub-selector" class="sub-selector hidden" >
+                    <div class="sub-info">
+                      <p>Spend less on laundry every month, sign up for our subscription service. It saves time, money and effort. We pick up your clothes, clean them according to your preferences and have them delivered back to you so fast you'll hardly notice they ever left and yes it’s pocket friendly.</p>
+                    </div>
+                  
+                  
+                  <label class="form-control">
+                    <input type="radio" name="radio" />
+                    <h5>kleanklique starter plan </h5> 
+                    <p>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
+                  </label>
+                  
+                  <label class="form-control">
+                    <input type="radio" name="radio" />
+                    <h5>Standard plan</h5> 
+                    <p>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
+                  </label>
+                  
+                  <label class="form-control">
+                    <input type="radio" name="radio" />
+                    <h5>Family size plan</h5>
+                    <p>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
+                  </label>
+                  
+                  <label class="form-control">
+                    <input type="radio" name="radio" />
+                    <h5>Family plus pack</h5>
+                    <p>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
+                  </label>
+                  
+                  </div>
+                  
+                  <input required="" type="text" placeholder="Location" id="Location" name="Location"/>
+                  <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Busstop"/>
+                  <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Day"/>
+                  <h5>Preferred Cleaning Day</h5>
+                  <input type="hidden" name="_captcha" value="false">
+                  
+                  <button type="submit">Contact</button>        
             </form>
     
             <div class="instruction-link2">
@@ -654,45 +701,55 @@ function setup() {
 
 <!-- Show hidden form content on selection -->
 <script>
-    const itemSelect = document.getElementById('primary-select');
-const itemForm = document.getElementById('item-form');
+//     const itemSelect = document.getElementById('primary-select');
+// const itemForm = document.getElementById('item-form');
 
-itemSelect.addEventListener('change', (e) => {
-  if (itemSelect.value ==='HomeCleaning') {
-    itemForm.classList.remove('hidden');
+// itemSelect.addEventListener('change', (e) => {
+//   if (itemSelect.value ==='HomeCleaning') {
+//     itemForm.classList.remove('hidden');
+//   } else {
+//     itemForm.classList.add('hidden');
+//   }
+// });
+
+
+
+
+// const itemSelect2 = document.getElementById('primary-select');
+// const itemForm2 = document.getElementById('item-form2');
+
+// itemSelect.addEventListener('change', (e) => {
+//   if (itemSelect2.value ==='OfficeCleaning') {
+//     itemForm2.classList.remove('hidden');
+//   } else {
+//     itemForm2.classList.add('hidden');
+//   }
+// });
+
+
+
+
+// const itemSelect3 = document.getElementById('primary-select');
+// const itemForm3 = document.getElementById('item-form3');
+
+// itemSelect.addEventListener('change', (e) => {
+//   if (itemSelect3.value ==='LaundryService') {
+//     itemForm3.classList.remove('hidden');
+//   } else {
+//     itemForm3.classList.add('hidden');
+//   }
+// });
+
+const itemSubscription = document.getElementById('primary-select');
+const itemSub = document.getElementById('sub-selector');
+
+itemSubscription.addEventListener('change', (e) => {
+  if (itemSubscription.value ==='LaundrySubscription') {
+    itemSub.classList.remove('hidden');
   } else {
-    itemForm.classList.add('hidden');
+    itemSub.classList.add('hidden');
   }
 });
-
-
-
-
-const itemSelect2 = document.getElementById('primary-select');
-const itemForm2 = document.getElementById('item-form2');
-
-itemSelect.addEventListener('change', (e) => {
-  if (itemSelect2.value ==='OfficeCleaning') {
-    itemForm2.classList.remove('hidden');
-  } else {
-    itemForm2.classList.add('hidden');
-  }
-});
-
-
-
-
-const itemSelect3 = document.getElementById('primary-select');
-const itemForm3 = document.getElementById('item-form3');
-
-itemSelect.addEventListener('change', (e) => {
-  if (itemSelect3.value ==='LaundryService') {
-    itemForm3.classList.remove('hidden');
-  } else {
-    itemForm3.classList.add('hidden');
-  }
-});
-
 
 </script>
 

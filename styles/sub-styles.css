@@ -1,0 +1,119 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"montserrat", poppins, sans-serif;
+    height: auto;
+   /* overflow-x: hidden; */
+    
+}
+
+
+:root {
+  --form-control-color: #0a1542 ;
+}
+
+.sub-selector{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+
+}
+.sub-info{
+	padding: 20px 50px;
+}
+.sub-info p{
+	font-size: 14px;
+}
+
+.form-control{
+	height: 300px;
+	width: 300px;
+	background: #0092f5 ;
+	margin: 10px 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	border-radius: 15px;
+	color: white;
+	cursor: pointer;
+	 margin-top: 1em;
+  	align-items: center;	
+  	 transition: 120ms transform ease-in-out
+
+}
+.form-control p{
+	padding: 0 25px;
+	font-size: 12px;
+}
+.form-control h5{
+	text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+.form-control input{
+	margin-bottom: 20px;
+	cursor: pointer;
+
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  
+
+  font: inherit;
+  color: currentColor;
+  width: 2.15em;
+  height: 2.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+    /* ...existing styles */
+/* 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0;
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 1.40em;
+  height: 1.40em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.form-control:focus-within {
+ 
+background: linear-gradient( to left top, #081542, #0092f5) ;
+}
+
+
+/*for click to appear*/
+
+.hidden{
+
+  display: none;
+  transition: all 0.3s ease;
+}
