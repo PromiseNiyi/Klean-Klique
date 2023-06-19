@@ -823,10 +823,16 @@ transition:0.5s all ease ;
     left: 5px;
     gap: 20px;
 }
+
 .testifier img{
     border-radius: 50%;
     width: 30px;
 }
+.testifier h3{
+font-size: 14px;
+}
+
+
 
 
 
