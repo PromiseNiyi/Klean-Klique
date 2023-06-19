@@ -28,16 +28,16 @@
 .sub-info p{
 	font-size: 12px;
   font-weight: 500;
- color: grey;
- line-height: 20px;
+ color: rgb(158, 35, 35);
+ line-height: 50px;
 }
 
-@supports (line-height: 20px){
+/* @supports (line-height: 20px){
   .sub-info p{
 line-height: 50px;
 color: green;
   }
-}
+} */
 
 .form-control{
 	height: 300px;
