@@ -23,7 +23,7 @@
 	min-height: 100vh;
 	height: auto;
 	padding: 20px 35px;
-	background: linear-gradient( to left top, darkblue, skyblue) ;
+	background: linear-gradient( to top, #0a1542, #0a1542, #0092f5) ;
 }
 .wrapperx{
 	max-width: 1100px;
@@ -51,7 +51,7 @@ display: flex;
 justify-content: center;
 
 font: 1.25rem;
-
+outline: none;
 transform: translateY(-50%);
 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23) ;
 
@@ -151,6 +151,21 @@ padding-bottom:2pxx ; */
 @media screen and (max-width: 600px){
 .wrapperx .carousel{
 	grid-auto-columns: 100%;
+}
+
+.body{
+	min-height: auto;
+	height:80vh;
+	
+
+} 
+
+
+.cardsection{
+	
+	min-height: 100vh;
+	height: auto;
+	
 }
 }
 
