@@ -67,19 +67,19 @@
                 <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
                 <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
                  <label for="primary-select"></label>         
-                <select class="primary-select" name="primary-select" id="primary-select">
+                 <select class="primary-select" name="primary-select" id="primary-select" required="">
                     
-                    <option value="No Service selected">Select a Service</option>
-                    <option value="HomeCleaning">Home Cleaning</option>
-                    <option value="OfficeCleaning">Office Cleaning</option>
-                    <option value="EventCleaning">Event Cleaning</option>
-                    <option value="LaundryService">Laundry Service</option>
-                    <option value="CarDetailing">Car Detailing Service</option>
-                    <option value="WasteManagement">Waste Management</option>
-                    <option value="UpholsteryCleaning">Upholstery Cleaning</option>
-                    <option value="windowCleaning">Window Cleaning</option>
-                    <option value="RugCleaning">Rug, Carpet Cleaning</option>
-                    <option value="LaundrySubscription">Laundry Subscription Package</option>
+                    <option value="" disabled selected hidden>Select a Service</option>
+                    <option value="Home Cleaning">Home Cleaning</option>
+                    <option value="Office Cleaning">Office Cleaning</option>
+                    <option value="Event Cleaning">Event Cleaning</option>
+                    <option value="Laundry Service">Laundry Service</option>
+                    <option value="Car Detailing">Car Detailing Service</option>
+                    <option value="Waste Management">Waste Management</option>
+                    <option value="Upholstery Cleaning">Upholstery Cleaning</option>
+                    <option value="window Cleaning">Window Cleaning</option>
+                    <option value="Rug Cleaning">Rug, Carpet Cleaning</option>
+                    <option value="Laundry Subscription">Laundry Subscription Package</option>
                 </select>
     
     <!-- Section for Home cleaning -->
@@ -254,30 +254,35 @@
                     <p>Spend less on laundry every month, sign up for our subscription service. It saves time, money and effort. We pick up your clothes, clean them according to your preferences and have them delivered back to you so fast you'll hardly notice they ever left and yes it’s pocket friendly.</p>
                   </div>
                 
-                
-                <label class="form-control">
-                  <input type="radio" name="radio" />
-                  <h5>kleanklique starter plan </h5> 
-                  <p>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
-                </label>
-                
-                <label class="form-control">
-                  <input type="radio" name="radio" />
-                  <h5>Standard plan</h5> 
-                  <p>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
-                </label>
-                
-                <label class="form-control">
-                  <input type="radio" name="radio" />
-                  <h5>Family size plan</h5>
-                  <p>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
-                </label>
-                
-                <label class="form-control">
-                  <input type="radio" name="radio" />
-                  <h5>Family plus pack</h5>
-                  <p>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
-                </label>
+                  <label class="NoPlan form-control ">
+                    <input type="radio" name="radio" id="Lpackage" value="Did not opt in for Subscription Plan"/>
+                    <h5>No plan Selected </h5> 
+                    <p>None.</p>
+                  </label>
+
+                  <label class="form-control">
+                    <input type="radio" name="radio" id="Lpackage" value="Starter Plan"/>
+                    <h5>kleanklique starter plan </h5> 
+                    <p>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
+                  </label>
+                  
+                  <label class="form-control"  >
+                    <input type="radio" name="radio" id="Lpackage" value="Standard Plan"/>
+                    <h5>Standard plan</h5> 
+                    <p>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
+                  </label>
+                  
+                  <label class="form-control"  >
+                    <input type="radio" name="radio" id="Lpackage" value="Family Size Plan" />
+                    <h5>Family size plan</h5>
+                    <p>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
+                  </label>
+                  
+                  <label class="form-control" >
+                    <input type="radio" name="radio" id="Lpackage" value="Family PLus Pack" />
+                    <h5>Family plus pack</h5>
+                    <p>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
+                  </label>
 
                 <div class="space"></div>
                 
@@ -401,7 +406,7 @@ const itemSubscription = document.getElementById('primary-select');
 const itemSub = document.getElementById('sub-selector');
 
 itemSubscription.addEventListener('change', (e) => {
-  if (itemSubscription.value ==='LaundrySubscription') {
+  if (itemSubscription.value ==='Laundry Subscription') {
     itemSub.classList.remove('hidden');
   } else {
     itemSub.classList.add('hidden');
@@ -413,6 +418,12 @@ itemSubscription.addEventListener('change', (e) => {
 
 
 <!-- Show hidden form content on selection finish -->
+
+
+
+
+
+
 
 
 
@@ -576,6 +587,40 @@ function updateTotalPrice3() {
 }
 </script>
 <!-- Form Script Ended-->
+
+<!-- Submit on click -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      // SecureToken: "a5daf87c-6ea5-40ed-af28-a51005e00ca8",  
+        Host : "smtp.elasticemail.com",
+        Username : "promiseniyi@gmail.com",
+        Password : "6F4031D975D4EB007466A5BA05992D478B64",
+        To : 'promiseniyi@gmail.com',
+        From : "promiseniyi@gmail.com",
+        Subject : "New Service Enquiry from" + document.getElementById("Email").value,
+        Body : "Name: " + document.getElementById("Name").value
+        + "<br> Email: " + document.getElementById("Email").value
+        + "<br> Phone Number: " + document.getElementById("Phone").value
+        + "<br> Service: " + document.getElementById("primary-select").value
+        + "<br> Laundry Subscription Plan: " + document.getElementById("Lpackage").value
+        + "<br> Location: " + document.getElementById("Location").value
+        + "<br> Nearest Bus Stop: " + document.getElementById("Busstop").value
+        + "<br> Preferred Cleaning Day: " + document.getElementById("Day").value
+       
+
+
+
+}).then(
+  message => alert("Message sent Successfully")
+);
+  }
+</script>
+
+
+<!-- Submit on click end -->
+
 
 
 
