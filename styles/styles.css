@@ -1885,7 +1885,6 @@ footer{
     .stick{
         background-color: #0093f5ab;
         min-height:10vh;
-       
         width: 100%;
         backdrop-filter: blur(5px);
         overflow-y: hidden;
