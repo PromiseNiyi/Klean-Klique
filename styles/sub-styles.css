@@ -131,3 +131,10 @@ background: linear-gradient( to left top, #081542, #0092f5) ;
   display: none;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 900px){
+
+  .form-control{
+ 
+    width: 250px;
+  }
+}
