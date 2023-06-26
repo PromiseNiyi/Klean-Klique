@@ -1873,6 +1873,7 @@ footer{
   } */
 
 
+
 }
 
 @media (max-width:50em){
@@ -1880,7 +1881,7 @@ footer{
     .logo{
         cursor: pointer;
         background: none;
-        width: 200px;
+        width: 150px;
        
     }
     .stick{
