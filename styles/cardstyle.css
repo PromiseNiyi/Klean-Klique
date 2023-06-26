@@ -146,6 +146,12 @@ padding-bottom:2pxx ; */
 .wrapperx .carousel{
 	grid-auto-columns: calc((100% / 2) - 9px);
 }
+
+.body{
+	min-height: 100vh;
+	height:auto;
+}
+
 }
 
 @media screen and (max-width: 600px){
@@ -155,17 +161,19 @@ padding-bottom:2pxx ; */
 
 .body{
 	min-height: auto;
-	height:80vh;
-	
+	height:90vh;
 
 } 
 
 
 .cardsection{
 	
-	min-height: 100vh;
+	min-height: 90vh;
 	height: auto;
+	
 	
 }
 }
+
+
 
