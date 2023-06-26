@@ -135,7 +135,9 @@ button{
     color: white;
 }
 
-
+a, button{
+    outline: none;
+}
    
    
 i{
