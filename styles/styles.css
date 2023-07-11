@@ -599,6 +599,10 @@ font-weight: bold;
    color: rgba(0, 0, 0, 0.437);
 }
 
+.foot p a{
+    color: rgba(0, 0, 0, 0.708);
+}
+
 /*_______________________________________________________________*/
 /* About page*/
 
@@ -933,6 +937,7 @@ font-size: 14px;
 .list-content p{
     text-align: left;
     font-size: 12px;
+    line-height: 18px;
 }
    
   #pictur{
