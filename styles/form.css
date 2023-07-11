@@ -89,7 +89,7 @@
   }
   .instruction-link2 p{
     font-family: "montserrat", poppins, sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     margin-top: 0px;
     margin-bottom: 20px;
     padding-bottom: 50px;
@@ -100,6 +100,7 @@
   .instruction-link2 p a{
     text-decoration: none;
     color: #4CAF50;
+    font-weight:bold ;
   }
 
 

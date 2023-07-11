@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
-	font-family: poppins;
+	font-family:"montserrat", poppins, sans-serif;
 	
 }
 .body{
@@ -18,12 +20,19 @@
 	width: 100%;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
 	height: auto;
 	padding: 20px 35px;
 	background: linear-gradient( to top, #0a1542, #0a1542, #0092f5) ;
+}
+
+.cardsection h1{
+margin-bottom: 60px;
+color: white;
+font-size: 30px;
 }
 .wrapperx{
 	max-width: 1100px;
