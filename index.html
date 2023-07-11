@@ -527,10 +527,35 @@
 
                   <div id="sub-selector" class="sub-selector hidden" >
                     <div class="sub-info">
-                      <p>Spend less on laundry every month, sign up for our subscription service. It saves time, money and effort. We pick up your clothes, clean them according to your preferences and have them delivered back to you so fast you'll hardly notice they ever left and yes it’s pocket friendly.</p>
+                      <p>Spend less on laundry every month, sign up for our subscription service.
+                         It saves time, money and effort. We pick up your clothes, clean them according 
+                         to your preferences and have them delivered back to you so fast you'll hardly notice they ever left and yes it’s pocket friendly.</p>
+                     <br>
+                      <p><span>Starter plan: </span>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
+
+                      
+                      <p><span>Standard plan: </span>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
+
+                   
+                      <p><span>Family size plan: </span>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
+                      
+                     
+                    <p><span>Family plus pack: </span>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
+
                     </div>
                   
-                    <label class="NoPlan form-control ">
+                    <select class="primary-select" name="Subscription-pack" id="Lpackage" >
+                    
+                      <option value="no subscription" disabled selected hidden>Select a Subscription Pack</option>
+                      <option value="Starter plan">Starter plan </option>
+                      <option value="Standard plan">Standard plan</option>
+                      <option value="Family size plan">Family size plan</option>
+                      <option value="Family plus pack">Family plus pack</option>
+                   
+                      
+                  </select>
+
+                    <!-- <label class="NoPlan form-control ">
                       <input type="radio" name="radio" id="Lpackage" value="Did not opt in for Subscription Plan"/>
                       <h5>No plan Selected </h5> 
                       <p>None.</p>
@@ -558,7 +583,7 @@
                     <input type="radio" name="radio" id="Lpackage" value="Family PLus Pack" />
                     <h5>Family plus pack</h5>
                     <p>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
-                  </label>
+                  </label> -->
 
                   <div class="space"></div>
                   
@@ -945,7 +970,7 @@ function updateTotalPrice3() {
         Password : "6F4031D975D4EB007466A5BA05992D478B64",
         To : 'promiseniyi@gmail.com',
         From : "promiseniyi@gmail.com",
-        Subject : "New Service Enquiry from" + document.getElementById("Email").value,
+        Subject : "New Service Enquiry from " + document.getElementById("Email").value,
         Body : "Name: " + document.getElementById("Name").value
         + "<br> Email: " + document.getElementById("Email").value
         + "<br> Phone Number: " + document.getElementById("Phone").value
