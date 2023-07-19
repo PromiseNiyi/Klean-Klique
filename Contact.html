@@ -619,7 +619,9 @@ function updateTotalPrice3() {
   function sendEmail(){
     Email.send({
       // SecureToken: "a5daf87c-6ea5-40ed-af28-a51005e00ca8",  
-        SecureToken:"e2181bfd-7f8f-45ce-afec-9bbd83e5fdb0",
+        Host : "smtp.elasticemail.com",
+        Username : "info@kleanklique.com",
+        Password : "50BD38197DDD9B2ECF76634B1587D0DED357",
         To : 'promiseniyi@gmail.com',
         From :document.getElementById("Email").value,
         Subject : "New Service Enquiry from " + document.getElementById("Name").value,
