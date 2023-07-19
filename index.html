@@ -959,18 +959,20 @@ function updateTotalPrice3() {
 
 <!-- Submit email on click -->
 
+<!--   Host : "smtp.elasticemail.com",
+        Username : "info@kleanklique.com",
+        Password : "50BD38197DDD9B2ECF76634B1587D0DED357", -->
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
   function sendEmail(){
     Email.send({
-      // SecureToken: "a5daf87c-6ea5-40ed-af28-a51005e00ca8",  
-        Host : "smtp.elasticemail.com",
-        Username : "promiseniyi@gmail.com",
-        Password : "6F4031D975D4EB007466A5BA05992D478B64",
-        To : 'promiseniyi@gmail.com',
-        From : "promiseniyi@gmail.com",
-        Subject : "New Service Enquiry from " + document.getElementById("Email").value,
+      // SecureToken: "a5daf87c-6ea5-40ed-af28-a51005e00ca8", 
+      SecureToken:"e2181bfd-7f8f-45ce-afec-9bbd83e5fdb0",
+      
+        To : 'info@kleanklique.com',
+        From : document.getElementById("Email").value,
+        Subject : "New Service Enquiry from " + document.getElementById("Name").value,
         Body : "Name: " + document.getElementById("Name").value
         + "<br> Email: " + document.getElementById("Email").value
         + "<br> Phone Number: " + document.getElementById("Phone").value
