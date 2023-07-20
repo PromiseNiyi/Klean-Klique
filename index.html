@@ -319,14 +319,14 @@
   <h1>Apply for Our Services Here</h1>
     <div class = "center-form">
        <div class="form2">
-            <form class="contact-form2"  onsubmit="sendEmail(); reset(); return false;"   method="POST" >
+            <form class="contact-form2"  action="https://formsubmit.co/4c6a506fb718a882f79b714ad380d629" method="POST" >
               <!-- onsubmit="sendEmail(); reset(); return false;"      ----         action="https://formsubmit.co/44af4310cac6a5f785b4569b8c63c14b "-->
               
                 <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
-                <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
+                <input required="" type="email" placeholder="Email Address"  id="Email" name="email"/>
                 <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
                  <label for="primary-select"></label>         
-                <select class="primary-select" name="primary-select" id="primary-select" required="">
+                <select class="primary-select" name="Service required" id="primary-select" required="">
                     
                     <option value="" disabled selected hidden>Select a Service</option>
                     <option value="Home Cleaning">Home Cleaning</option>
@@ -544,7 +544,7 @@
 
                     </div>
                   
-                    <select class="primary-select" name="Subscription-pack" id="Lpackage" >
+                    <select class="primary-select" name="Subscription-package" id="Lpackage" >
                     
                       <option value="no subscription" disabled selected hidden>Select a Subscription Pack</option>
                       <option value="Starter plan">Starter plan </option>
@@ -590,11 +590,13 @@
                   </div>
                   
                   <input required="" type="text" placeholder="Location" id="Location" name="Location"/>
-                  <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Busstop"/>
-                  <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Day"/>
+                  <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Bus Stop"/>
+                  <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Cleaning Day"/>
                   <h5>Preferred Cleaning Day</h5>
-                  <input type="hidden" name="_captcha" value="false">
-                  
+                  <!-- <input type="hidden" name="_captcha" value="false"> -->
+                  <input type="hidden" name="_next" value="https://www.kleanklique.com">
+                  <input type="hidden" name="_subject" value="Kleanklique Service Enquiry!">
+                  <input type="hidden" name="_autoresponse" value="your request was recieved, you will recieve a reply from us Shortly. Kleanklique">
                   <button type="submit">Contact</button>
                  
                   
@@ -964,7 +966,7 @@ function updateTotalPrice3() {
         Password : "50BD38197DDD9B2ECF76634B1587D0DED357", 
       SecureToken:"e2181bfd-7f8f-45ce-afec-9bbd83e5fdb0",-->
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
   function sendEmail(){
     Email.send({
@@ -992,7 +994,7 @@ function updateTotalPrice3() {
   message => alert("Message sent Successfully")
 );
   }
-</script>
+</script> -->
 
 <!-- Submi email on click end -->
 

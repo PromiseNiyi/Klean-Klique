@@ -61,271 +61,289 @@
 
     <div class = "center-form">
        <div class="form2">
-            <form class="contact-form2" onsubmit="sendEmail(); reset(); return false;"   method="POST"  >
+        <form class="contact-form2"  action="https://formsubmit.co/4c6a506fb718a882f79b714ad380d629" method="POST" >
+          <!-- onsubmit="sendEmail(); reset(); return false;"      ----         action="https://formsubmit.co/44af4310cac6a5f785b4569b8c63c14b "-->
+          
+            <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
+            <input required="" type="email" placeholder="Email Address"  id="Email" name="email"/>
+            <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
+             <label for="primary-select"></label>         
+            <select class="primary-select" name="Service required" id="primary-select" required="">
+                
+                <option value="" disabled selected hidden>Select a Service</option>
+                <option value="Home Cleaning">Home Cleaning</option>
+                <option value="Office Cleaning">Office Cleaning</option>
+                <option value="Event Cleaning">Event Cleaning</option>
+                <option value="Laundry Service">Laundry Service</option>
+                <option value="Car Detailing">Car Detailing Service</option>
+                <option value="Waste Management">Waste Management</option>
+                <option value="Upholstery Cleaning">Upholstery Cleaning</option>
+                <option value="window Cleaning">Window Cleaning</option>
+                <option value="Rug Cleaning">Rug, Carpet Cleaning</option>
+                <option value="Laundry Subscription">Laundry Subscription Package</option>
+                
+            </select>
+
+<!-- Section for Home cleaning -->
+<!-- 
+
+
+            <div id="item-form" class="hidden">
+              <h1>Select Service Accordingly</h1>
+              <div class="hidden-child">
+
                
-                <input required="" type="text"  placeholder="Name"    id="Name" name="Name"/>
-                <input required="" type="email" placeholder="Email Address"  id="Email" name="Email"/>
-                <input required="" type="tel" placeholder="Phone" id="Phone" name="Phone"/>
-                 <label for="primary-select"></label>         
-                 <select class="primary-select" name="primary-select" id="primary-select" required="">
-                    
-                    <option value="" disabled selected hidden>Select a Service</option>
-                    <option value="Home Cleaning">Home Cleaning</option>
-                    <option value="Office Cleaning">Office Cleaning</option>
-                    <option value="Event Cleaning">Event Cleaning</option>
-                    <option value="Laundry Service">Laundry Service</option>
-                    <option value="Car Detailing">Car Detailing Service</option>
-                    <option value="Waste Management">Waste Management</option>
-                    <option value="Upholstery Cleaning">Upholstery Cleaning</option>
-                    <option value="window Cleaning">Window Cleaning</option>
-                    <option value="Rug Cleaning">Rug, Carpet Cleaning</option>
-                    <option value="Laundry Subscription">Laundry Subscription Package</option>
-                </select>
-    
-    <!-- Section for Home cleaning -->
-    
-                <!-- <div id="item-form" class="hidden">
-                  <h1>Select Service Accordingly</h1>
-                  <div class="hidden-child">
-    
-                   
-      
-                    <div class="product">
-                      <h2>Rooms</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity" min="0" step="1" data-price="10">
-                      </div>
-                    </div>
-      
-                    <div class="product">
-                      <h2>Toilets</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity" min="0" step="1" data-price="20">
-                      </div>
-                    </div>
-      
-                    <div class="product">
-                      <h2>Living Room</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity" min="0" step="1" data-price="30">
-                      </div>
-                    </div>
-      
-                    <div class="product">
-                      <h2>Kitchen</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity" min="0" step="1" data-price="5">
-                      </div>
-                    </div>
-      
-                    <div class="selected-products">
-                      <div class="hline">
-                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
-                      </div>
-                      
-                      <h2>Cost Of Selected Services</h2>
-                      <ul id="selected-list"></ul>
-                      <div id="total-price">Total Price: $0</div>
-                    </div>
-                    
+  
+                <div class="product">
+                  <h2>Rooms</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity" min="0" step="1" data-price="10">
                   </div>
-                  <div class="space"></div>
-                </div> -->
-    
-    <!-- Section for office cleaning -->
-    
-                <!-- <div id="item-form2" class="hidden">
-                  <h1>Select Office Information</h1>
-                  <div class="hidden-child">
-    
-                   
-      
-                    <div class="product2">
-                      <h2>Tables</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity2" min="0" step="1" data-price="100" >
-                      </div>
-                    </div>
-      
-                    <div class="product2">
-                      <h2>Chairs</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity2" min="0" step="1" data-price="200">
-                      </div>
-                    </div>
-      
-                    <div class="product2">
-                      <h2>Offices</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity2" min="0" step="1" data-price="300">
-                      </div>
-                    </div>
-      
-                    <div class="product2">
-                      <h2>Desks</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity2" min="0" step="1" data-price="50">
-                      </div>
-                    </div>
-      
-                    <div class="selected-products">
-                      <div class="hline">
-                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
-                      </div>
-                      
-                      <h2>Cost Of Selected Services</h2>
-                      <ul id="selected-list2"></ul>
-                      <div id="total-price2">Total Price: $0</div>
-                    </div>
-                    
-                  </div>
-                  <div class="space"></div>
-                </div> -->
-    
-    
-    
-    
-       <!-- Section for laundry -->
-<!--     
-                <div id="item-form3" class="hidden">
-                  <h1>Select Wears Accordingly</h1>
-                  <div class="hidden-child">
-    
-                   
-      
-                    <div class="product3">
-                      <h2>Suits</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity3" min="0" step="1" data-price="150" >
-                      </div>
-                    </div>
-      
-                    <div class="product3">
-                      <h2>Shirts</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
-                      </div>
-                    </div>
-      
-                    <div class="product3">
-                      <h2>Trousers</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
-                      </div>
-                    </div>
-      
-                    <div class="product3">
-                      <h2>Inner Wears</h2>
-                      <div class="product-item">
-                        <span>Quantity:</span>
-                        <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
-                      </div>
-                    </div>
-      
-                    <div class="selected-products">
-                      <div class="hline">
-                        <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
-                      </div>
-                      
-                      <h2>Cost Of Selected Services</h2>
-                      <ul id="selected-list3"></ul>
-                      <div id="total-price3">Total Price: $0</div>
-                    </div>
-                    
-                  </div>
-                  <div class="space"></div>
                 </div>
-                 -->
+  
+                <div class="product">
+                  <h2>Toilets</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity" min="0" step="1" data-price="20">
+                  </div>
+                </div>
+  
+                <div class="product">
+                  <h2>Living Room</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity" min="0" step="1" data-price="30">
+                  </div>
+                </div>
+  
+                <div class="product">
+                  <h2>Kitchen</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity" min="0" step="1" data-price="5">
+                  </div>
+                </div>
+  
+                <div class="selected-products">
+                  <div class="hline">
+                    <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                  </div>
+                  
+                  <h2>Cost Of Selected Services</h2>
+                  <ul id="selected-list"></ul>
+                  <div id="total-price">Total Price: $0</div>
+                </div>
+                
+              </div>
+              <div class="space"></div>
+            </div>
+     -->
+<!-- Section for office cleaning -->
+<!-- 
+            <div id="item-form2" class="hidden">
+              <h1>Select Office Information</h1>
+              <div class="hidden-child">
+
+               
+  
+                <div class="product2">
+                  <h2>Tables</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity2" min="0" step="1" data-price="100" >
+                  </div>
+                </div>
+  
+                <div class="product2">
+                  <h2>Chairs</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity2" min="0" step="1" data-price="200">
+                  </div>
+                </div>
+  
+                <div class="product2">
+                  <h2>Offices</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity2" min="0" step="1" data-price="300">
+                  </div>
+                </div>
+  
+                <div class="product2">
+                  <h2>Desks</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity2" min="0" step="1" data-price="50">
+                  </div>
+                </div>
+  
+                <div class="selected-products">
+                  <div class="hline">
+                    <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                  </div>
+                  
+                  <h2>Cost Of Selected Services</h2>
+                  <ul id="selected-list2"></ul>
+                  <div id="total-price2">Total Price: $0</div>
+                </div>
+                
+              </div>
+              <div class="space"></div>
+            </div>
 
 
-                 <div id="sub-selector" class="sub-selector hidden" >
-                  <div class="sub-info">
+ -->
+
+   <!-- Section for laundry -->
+<!-- 
+            <div id="item-form3" class="hidden">
+              <h1>Select Wears Accordingly</h1>
+              <div class="hidden-child">
+
+               
+  
+                <div class="product3">
+                  <h2>Suits</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity3" min="0" step="1" data-price="150" >
+                  </div>
+                </div>
+  
+                <div class="product3">
+                  <h2>Shirts</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                  </div>
+                </div>
+  
+                <div class="product3">
+                  <h2>Trousers</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                  </div>
+                </div>
+  
+                <div class="product3">
+                  <h2>Inner Wears</h2>
+                  <div class="product-item">
+                    <span>Quantity:</span>
+                    <input type="number" class="product-quantity3" min="0" step="1" data-price="100">
+                  </div>
+                </div>
+  
+                <div class="selected-products">
+                  <div class="hline">
+                    <hr  style="width:90%; border-top: 2px dashed rgb(222, 222, 222); " ></hr>
+                  </div>
+                  
+                  <h2>Cost Of Selected Services</h2>
+                  <ul id="selected-list3"></ul>
+                  <div id="total-price3">Total Price: $0</div>
+                </div>
+                
+              </div>
+              <div class="space"></div>
+            </div>
+            
+            
+
+            <input required="" type="text" placeholder="Location" id="Location" name="Location"/>
+            <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Busstop"/>
+            <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Day"/>
+            <h5>Preferred Cleaning Day</h5>
+            <input type="hidden" name="_captcha" value="false">
+            
+            
+            -->
+              <!-- <input type="submit" onsubmit="gotowhatsapp()"> -->
+        
+
+
+
+
+              <div id="sub-selector" class="sub-selector hidden" >
+                <div class="sub-info">
                   <p>Spend less on laundry every month, sign up for our subscription service.
-                    It saves time, money and effort. We pick up your clothes, clean them according 
-                    to your preferences and have them delivered back to you so fast you'll hardly notice they ever left and yes it’s pocket friendly.</p>
-                <br>
-                 <p><span>Starter plan: </span>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
+                     It saves time, money and effort. We pick up your clothes, clean them according 
+                     to your preferences and have them delivered back to you so fast you'll hardly notice they ever left and yes it’s pocket friendly.</p>
+                 <br>
+                  <p><span>Starter plan: </span>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
 
-                 
-                 <p><span>Standard plan: </span>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
+                  
+                  <p><span>Standard plan: </span>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
 
-              
-                 <p><span>Family size plan: </span>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
-                 
-                
-               <p><span>Family plus pack: </span>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
-
-               </div>
-             
-               <select class="primary-select" name="Subscription-pack" id="Lpackage" >
                
-                 <option value="no subscription" disabled selected hidden>Select a Subscription Pack</option>
-                 <option value="Starter plan">Starter plan </option>
-                 <option value="Standard plan">Standard plan</option>
-                 <option value="Family size plan">Family size plan</option>
-                 <option value="Family plus pack">Family plus pack</option>
-              
+                  <p><span>Family size plan: </span>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
+                  
                  
-             </select>
-                
-                  <!-- <label class="NoPlan form-control ">
-                    <input type="radio" name="radio" id="Lpackage" value="Did not opt in for Subscription Plan"/>
-                    <h5>No plan Selected </h5> 
-                    <p>None.</p>
-                  </label>
+                <p><span>Family plus pack: </span>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
 
-                  <label class="form-control">
-                    <input type="radio" name="radio" id="Lpackage" value="Starter Plan"/>
-                    <h5>kleanklique starter plan </h5> 
-                    <p>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
-                  </label>
-                  
-                  <label class="form-control"  >
-                    <input type="radio" name="radio" id="Lpackage" value="Standard Plan"/>
-                    <h5>Standard plan</h5> 
-                    <p>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
-                  </label>
-                  
-                  <label class="form-control"  >
-                    <input type="radio" name="radio" id="Lpackage" value="Family Size Plan" />
-                    <h5>Family size plan</h5>
-                    <p>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
-                  </label>
-                  
-                  <label class="form-control" >
-                    <input type="radio" name="radio" id="Lpackage" value="Family PLus Pack" />
-                    <h5>Family plus pack</h5>
-                    <p>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
-                  </label> -->
-
-                <div class="space"></div>
-                
                 </div>
+              
+                <select class="primary-select" name="Subscription-package" id="Lpackage" >
                 
-                
-    
-                <input required="" type="text" placeholder="Location" id="Location" name="Location"/>
-                <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Busstop"/>
-                <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Day"/>
-                <h5>Preferred Cleaning Day</h5>
-                
-                
-                <button type="submit">Contact</button>
+                  <option value="no subscription" disabled selected hidden>Select a Subscription Pack</option>
+                  <option value="Starter plan">Starter plan </option>
+                  <option value="Standard plan">Standard plan</option>
+                  <option value="Family size plan">Family size plan</option>
+                  <option value="Family plus pack">Family plus pack</option>
                
-    
-                           
-            </form>
+                  
+              </select>
+
+                <!-- <label class="NoPlan form-control ">
+                  <input type="radio" name="radio" id="Lpackage" value="Did not opt in for Subscription Plan"/>
+                  <h5>No plan Selected </h5> 
+                  <p>None.</p>
+                </label>
+
+              <label class="form-control">
+                <input type="radio" name="radio" id="Lpackage" value="Starter Plan"/>
+                <h5>kleanklique starter plan </h5> 
+                <p>#12,000 - 25 pieces of clothes, a duvet and a suit inclusive.</p>
+              </label>
+              
+              <label class="form-control" >
+                <input type="radio" name="radio" id="Lpackage" value="Standard Plan"/>
+                <h5>Standard plan</h5> 
+                <p>#22,000- 50 pieces of clothes, 2 duvet and 2 suit inclusive.</p>
+              </label>
+              
+              <label class="form-control"  >
+                <input type="radio" name="radio" id="Lpackage" value="Family Size Plan" />
+                <h5>Family size plan</h5>
+                <p>#40,000-100 pieces of clothes, 3 duvet and 3 suits inclusive.</p>
+              </label>
+              
+              <label class="form-control" >
+                <input type="radio" name="radio" id="Lpackage" value="Family PLus Pack" />
+                <h5>Family plus pack</h5>
+                <p>#75,000 - 200 pieces of clothes, 4 duvet and 4 suits inclusive.</p>
+              </label> -->
+
+              <div class="space"></div>
+              
+              </div>
+              
+              <input required="" type="text" placeholder="Location" id="Location" name="Location"/>
+              <input required="" type="text" placeholder="Nearest Bustop" id="Busstop" name="Bus Stop"/>
+              <input required="" type="date" name="cleaning day" placeholder="Preferred cleaning Day" id="Day" name="Cleaning Day"/>
+              <h5>Preferred Cleaning Day</h5>
+              <!-- <input type="hidden" name="_captcha" value="false"> -->
+              <input type="hidden" name="_next" value="https://www.kleanklique.com">
+              <input type="hidden" name="_subject" value="Kleanklique Service Enquiry!">
+              <input type="hidden" name="_autoresponse" value="your request was recieved, you will recieve a reply from us Shortly. Kleanklique">
+              <button type="submit">Contact</button>
+             
+              
+
+        </form>
     
             <div class="instruction-link2">
                 <p>If you prefer to reach Us via WhatsApp, <a href="https://wa.me/+23491303600001? text=Hello %20I'm%20interested%20in%20your%20Cleaning%20Service" target="_blank">Click Here</a>
@@ -614,7 +632,7 @@ function updateTotalPrice3() {
 <!-- Form Script Ended-->
 
 <!-- Submit on click -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
   function sendEmail(){
     Email.send({
@@ -641,7 +659,7 @@ function updateTotalPrice3() {
   message => alert("Message sent Successfully")
 );
   }
-</script>
+</script> -->
 
 
 <!-- Submit on click end -->
