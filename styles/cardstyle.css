@@ -7,7 +7,7 @@
 	
 }
 .body{
-	min-height: auto;
+	/* min-height: auto; */
 	align-items: center;
 	width: 100%;
 	height: 90vh;
@@ -23,9 +23,9 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
 	height: auto;
-	padding: 20px 35px;
+	min-height: 100%;
+	padding: 30px 35px;
 	background: linear-gradient( to top, #0a1542, #0a1542, #0092f5) ;
 }
 
@@ -157,8 +157,9 @@ padding-bottom:2pxx ; */
 }
 
 .body{
-	min-height: 100vh;
 	height:auto;
+	min-height: 60vh;
+	max-height: 10vh;
 }
 
 }
@@ -167,12 +168,6 @@ padding-bottom:2pxx ; */
 .wrapperx .carousel{
 	grid-auto-columns: 100%;
 }
-
-.body{
-	min-height: auto;
-	height:90vh;
-
-} 
 
 
 .cardsection{

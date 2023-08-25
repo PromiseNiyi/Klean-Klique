@@ -5,18 +5,19 @@
     margin: 0;
     padding: 0;
     font-family:"montserrat", poppins, sans-serif;
-    height: auto;
+    /* height: 100%; */
    /* overflow-x: hidden; */
     
 }
 
 body{
-   
+    background-color:#0a1542 ;
     overflow-x:hidden ;
 }
 
 
 html{
+    width: 100%;
     scroll-behavior: smooth;
     /* height: 100vh; */
     /* height: -webkit-fill-available; */
@@ -166,15 +167,15 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     overflow: hidden;
-  
+    height: 100vh;
 
 }
 
 .section-one{
     
- 
+    height: 100%;
     width: 100%;
     color: #0092f5;
 	text-align: left;
@@ -326,6 +327,7 @@ overflow: hidden;
 }
 
 .writeup{
+    /* width: 100%; */
     padding: 20px 20%;
     text-align: center;
     font-size: 14px;
@@ -442,9 +444,9 @@ color: #0a1542;
     align-items: center;
     justify-content: center;
     text-align: center;
-
     background-color:#0a1542 ;
-    height: 2vh;
+    height: 1vh;
+    min-height: 1vh;
     width: 100%;
 }
 
@@ -452,7 +454,7 @@ color: #0a1542;
 /*section three*/
 
 .section-three{
-
+    width: 100%;
     font-size: 20px;
     color :  #ffffff;
     display: flex;
@@ -462,9 +464,11 @@ color: #0a1542;
     text-align: center;
     padding-top:100px;
     padding-bottom: 20px;
-    height: 70vh;
+    height: auto;
+    min-height: 60vh;
     background-color: #0a1542;
     overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -482,9 +486,9 @@ color: #0a1542;
 .section3flex{
     overflow: hidden;
     margin-bottom: 25px;
-    
-   
-    
+   height: 100%;
+   width: 100%; 
+      
 }
 
 .section3flex p{
@@ -609,11 +613,10 @@ font-weight: bold;
 .About-page{
 background-color: #ffffff;
 font-size: 20px;
-color :  rgb(45, 45, 45);
+color :  rgb(0, 0, 0);
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: #f5fbff31;
 text-align: center;
 padding-top:200px;
 overflow: hidden;
@@ -1128,7 +1131,7 @@ font-size: 14px;
         }
 
 
-      
+
         .section-four{
             height: 100vh;
         }
@@ -1222,7 +1225,8 @@ font-size: 14px;
 
            
            .section-three{
-            height: 50vh;
+            height: auto;
+            min-height: 60vh;
             padding-top:5px;
         }
 
@@ -1234,9 +1238,13 @@ font-size: 14px;
 
 
     @media (max-width:90em){
+        /* section{height: auto;
+                min-height: 100vh;
+        } */
 
         .section-one{
-    
+            height: auto;
+            min-height: 100vh;
           
             padding: 0 20px 0 60px;
             overflow: hidden;
@@ -1334,6 +1342,19 @@ font-size: 14px;
         }
 
 
+        .line{
+            margin-top: 20%;
+            padding-top: 0;
+            background-color:#0a1542 ;
+            height: auto;
+            min-height: 10vh;
+            width: 100%;
+        }
+
+        section3flex{
+            height: 100%;
+        }
+
         .service-flexx{
             display: block;
         }
@@ -1347,7 +1368,10 @@ font-size: 14px;
             
            }
    
-
+           footer{
+            min-height: 30vh;
+           height: auto;
+           }
 
     }
     /* @media (max-width:80em){
@@ -1644,7 +1668,7 @@ font-size: 14px;
         .section-three{
             height: auto;
             min-height: 60vh;
-            
+            padding-top: 10px; 
         }
         /* .list--item {
             display: block; 
@@ -1805,6 +1829,22 @@ header{
         height:auto
     }
 
+    .line{
+        margin-top: 50%;
+        padding-top: 0;
+        background-color:#0a1542 ;
+        height: auto;
+        min-height: 10vh;
+        width: 100%;
+    }
+
+    .section-three{
+        padding-bottom: 70px;
+    }
+    .writeup{
+        /* width: 100%; */
+        padding: 20px 10%;
+    }
 
     .service-img{
         margin: 10%;
@@ -1820,9 +1860,9 @@ header{
         margin:0 50px;
     }
 
-    .service-writeup{
+    /* .service-writeup{
         margin-left: 10%;
-    }
+    } */
 
     #pictur {
         
@@ -1840,12 +1880,7 @@ header{
         border-radius: 10px;
         
         }
-        .section-three{
-            min-height: 60vh;
-        height: auto;
-        padding-top: 10px;
-        }
-
+     
         .section-four{
         padding-top: 35px;
         height: 120vh;
@@ -1945,6 +1980,7 @@ footer{
         position: fixed;
         transform: translateY(2.5vh);
         transition: all 0.5s ease;
+        
     }
 
     .resizehelper{
@@ -1965,9 +2001,24 @@ footer{
   
 
 .section-three{
+    min-height: 60vh;
     height: auto;
     padding-top:100px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
+}
+
+.line{
+    margin-top: 40%;
+    padding-top: 0;
+    background-color:#0a1542 ;
+    height: auto;
+    min-height: 10vh;
+    width: 100%;
+}
+
+.writeup{
+    /* width: 100%; */
+    padding: 20px 30px;
 }
 
 .service-img{
