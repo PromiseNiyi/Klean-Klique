@@ -1343,7 +1343,7 @@ font-size: 14px;
 
 
         .line{
-            margin-top: 20%;
+            margin-top: 10%;
             padding-top: 0;
             background-color:#0a1542 ;
             height: auto;
@@ -1830,12 +1830,16 @@ header{
     }
 
     .line{
-        margin-top: 50%;
+        /* margin-top: 25%; */
         padding-top: 0;
         background-color:#0a1542 ;
-        height: auto;
+        height: 10vh;
         min-height: 10vh;
         width: 100%;
+       
+    }
+    .line hr{
+        /* display: none; */
     }
 
     .section-three{
@@ -2003,15 +2007,15 @@ footer{
 .section-three{
     min-height: 60vh;
     height: auto;
-    padding-top:100px;
+    padding-top:40px;
     padding-bottom: 70px;
 }
 
 .line{
-    margin-top: 40%;
+    /* margin-top: 5rm; */
     padding-top: 0;
     background-color:#0a1542 ;
-    height: auto;
+    height: 10vh;
     min-height: 10vh;
     width: 100%;
 }
